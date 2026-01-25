@@ -1,23 +1,25 @@
+import { PropsWithChildren } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { Link, useLocation } from "react-router-dom";
-import { ErrorFallback } from "../components/ErrorFallback.jsx";
-import { RoutePaths } from "./RoutePaths.jsx";
-import { Section } from "../components/ui/Section.jsx";
+import ErrorFallback from "../components/ErrorFallback";
+import { RoutePaths } from "./RoutePaths";
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children }: PropsWithChildren) => {
   const location = useLocation();
-  
-  const isActive = (path) => location.pathname === path;
-  
+
+  const isActive = (path: string) => location.pathname === path;
+
   return (
     <>
       {/* Navigation */}
       <nav className="bg-white shadow-sm">
-        <Section as="div" className="py-0">
+        <div className="py-20 px-8">
           <div className="flex h-16 justify-between">
             <div className="flex">
               <Link to={RoutePaths.HOME} className="flex items-center">
-                <span className="text-2xl font-bold text-indigo-600">bithj.a.rts</span>
+                <span className="text-2xl font-bold text-primary">
+                  bithj.a.rts
+                </span>
               </Link>
             </div>
             <div className="flex space-x-8">
@@ -25,8 +27,8 @@ export const Layout = ({ children }) => {
                 to={RoutePaths.HOME}
                 className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium transition-colors ${
                   isActive(RoutePaths.HOME)
-                    ? "border-indigo-500 text-gray-900"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    ? "border-primary text-main-text"
+                    : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
                 }`}
               >
                 Home
@@ -35,8 +37,8 @@ export const Layout = ({ children }) => {
                 to={RoutePaths.PORTFOLIO}
                 className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium transition-colors ${
                   isActive(RoutePaths.PORTFOLIO)
-                    ? "border-indigo-500 text-gray-900"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    ? "border-primary text-main-text"
+                    : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
                 }`}
               >
                 Portfolio
@@ -45,8 +47,8 @@ export const Layout = ({ children }) => {
                 to={RoutePaths.ABOUT}
                 className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium transition-colors ${
                   isActive(RoutePaths.ABOUT)
-                    ? "border-indigo-500 text-gray-900"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    ? "border-primary text-main-text"
+                    : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
                 }`}
               >
                 About
@@ -55,8 +57,8 @@ export const Layout = ({ children }) => {
                 to={RoutePaths.COMMISSIONS}
                 className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium transition-colors ${
                   isActive(RoutePaths.COMMISSIONS)
-                    ? "border-indigo-500 text-gray-900"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    ? "border-primary text-main-text"
+                    : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
                 }`}
               >
                 Commissions
@@ -65,15 +67,15 @@ export const Layout = ({ children }) => {
                 to={RoutePaths.CONTACT}
                 className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium transition-colors ${
                   isActive(RoutePaths.CONTACT)
-                    ? "border-indigo-500 text-gray-900"
-                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    ? "border-primary text-main-text"
+                    : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
                 }`}
               >
                 Contact
               </Link>
             </div>
           </div>
-        </Section>
+        </div>
       </nav>
 
       {/* Main Content */}
@@ -83,24 +85,33 @@ export const Layout = ({ children }) => {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white">
-        <Section as="div" className="py-8">
+        <div className="p-16">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} Bithja Arts. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 transition-colors hover:text-white"
+              >
                 Instagram
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 transition-colors hover:text-white"
+              >
                 Twitter
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 transition-colors hover:text-white"
+              >
                 Facebook
               </a>
             </div>
           </div>
-        </Section>
+        </div>
       </footer>
     </>
   );

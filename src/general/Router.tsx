@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 
-import { RoutePaths } from "./RoutePaths.jsx";
-import { Home } from "../home/Home.jsx";
-import { Portfolio } from "../portfolio/Portfolio.jsx";
-import { ArtworkDetail } from "../portfolio/ArtworkDetail.jsx";
-import { About } from "../about/About.jsx";
-import { Commissions } from "../commissions/Commissions.jsx";
-import { Contact } from "../contact/Contact.jsx";
-import { NotFound } from "./NotFound.jsx";
-import { Layout } from "./Layout.jsx";
+import { RoutePaths } from "./RoutePaths";
+import { Home } from "../home/Home";
+import { Portfolio } from "../portfolio/Portfolio";
+import { ArtworkDetail } from "../portfolio/ArtworkDetail";
+import { About } from "../about/About";
+import { Commissions } from "../commissions/Commissions";
+import { Contact } from "../contact/Contact";
+import { NotFound } from "./NotFound";
+import { Layout } from "./Layout";
 
 export const Router = () => (
   <Routes>

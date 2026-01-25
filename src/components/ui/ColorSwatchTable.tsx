@@ -1,11 +1,21 @@
-export function ColorSwatchTable({ rows = [] }) {
+interface SwatchRow {
+  color: string;
+  name: string;
+  code?: string;
+}
+
+interface ColorSwatchTableProps {
+  rows?: SwatchRow[];
+}
+
+export function ColorSwatchTable({ rows = [] }: ColorSwatchTableProps) {
   return (
     <table className="w-full border-collapse">
       <tbody>
         {rows.map((row, idx) => (
           <tr key={idx} className="border-b border-gray-200">
             <td
-              style={{ background: row.color, width: '120px', height: '80px' }}
+              style={{ background: row.color, width: "120px", height: "80px" }}
               className="border border-gray-300"
             ></td>
             <td className="p-4">

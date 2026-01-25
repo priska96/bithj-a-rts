@@ -1,1 +1,8 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8f9a7a; /* Olive green */
+  --color-secondary: #3b244d; /* Deep purple */
+  --color-main-text: #3b244d; /* Deep purple */
+  --color-main-bg: #ded6c8; /* Beige */
+}
