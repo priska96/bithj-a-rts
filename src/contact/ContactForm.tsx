@@ -1,6 +1,7 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import { Button } from "../components/ui/Button";
 import { InputField } from "../components/ui/InputField";
+import { TextArea } from "../components/ui/TextArea";
 
 interface FormData {
   name: string;
@@ -53,7 +54,7 @@ export const ContactForm = ({
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <InputField
-          label="Name"
+          label="Name *"
           value={formData.name}
           onChange={handleChange}
           name="name"
@@ -61,7 +62,7 @@ export const ContactForm = ({
         />
 
         <InputField
-          label="Email"
+          label="Email *"
           value={formData.email}
           onChange={handleChange}
           name="email"
@@ -70,26 +71,27 @@ export const ContactForm = ({
       </div>
 
       <InputField
-        label="Subject"
+        label="Subject *"
         value={formData.subject}
         onChange={handleChange}
         name="subject"
         required
       />
 
-      <InputField
-        label="Message"
+      <TextArea
+        label="Message *"
         value={formData.message}
         onChange={handleChange}
         name="message"
         required
+        placeholder="Ask me anything you want..."
       />
 
       <div>
         <Button
           type="submit"
           variant="solidPrimary"
-          className="w-full rounded-md px-6 py-3 text-base"
+          className="w-full rounded-md"
         >
           Send Message
         </Button>
