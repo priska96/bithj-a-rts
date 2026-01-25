@@ -9,6 +9,14 @@ export const Layout = ({ children }: PropsWithChildren) => {
 
   const isActive = (path: string) => location.pathname === path;
 
+  const navLinks = [
+    { to: RoutePaths.HOME, label: "Home" },
+    { to: RoutePaths.PORTFOLIO, label: "Portfolio" },
+    { to: RoutePaths.ABOUT, label: "About" },
+    { to: RoutePaths.COMMISSIONS, label: "Commissions" },
+    { to: RoutePaths.CONTACT, label: "Contact" },
+  ];
+
   return (
     <>
       {/* Navigation */}
@@ -23,56 +31,19 @@ export const Layout = ({ children }: PropsWithChildren) => {
               </Link>
             </div>
             <div className="flex space-x-8">
-              <Link
-                to={RoutePaths.HOME}
-                className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium transition-colors ${
-                  isActive(RoutePaths.HOME)
-                    ? "border-primary text-main-text"
-                    : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
-                }`}
-              >
-                Home
-              </Link>
-              <Link
-                to={RoutePaths.PORTFOLIO}
-                className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium transition-colors ${
-                  isActive(RoutePaths.PORTFOLIO)
-                    ? "border-primary text-main-text"
-                    : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
-                }`}
-              >
-                Portfolio
-              </Link>
-              <Link
-                to={RoutePaths.ABOUT}
-                className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium transition-colors ${
-                  isActive(RoutePaths.ABOUT)
-                    ? "border-primary text-main-text"
-                    : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
-                }`}
-              >
-                About
-              </Link>
-              <Link
-                to={RoutePaths.COMMISSIONS}
-                className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium transition-colors ${
-                  isActive(RoutePaths.COMMISSIONS)
-                    ? "border-primary text-main-text"
-                    : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
-                }`}
-              >
-                Commissions
-              </Link>
-              <Link
-                to={RoutePaths.CONTACT}
-                className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium transition-colors ${
-                  isActive(RoutePaths.CONTACT)
-                    ? "border-primary text-main-text"
-                    : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
-                }`}
-              >
-                Contact
-              </Link>
+              {navLinks.map(({ to, label }) => (
+                <Link
+                  key={to}
+                  to={to}
+                  className={`inline-flex items-center border-b-2 px-1 pt-1 text-md font-medium transition-colors ${
+                    isActive(to)
+                      ? "border-primary text-main-text"
+                      : "border-transparent text-main-text/50 hover:border-gray-300 hover:text-main-text/70"
+                  }`}
+                >
+                  {label}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
@@ -88,7 +59,7 @@ export const Layout = ({ children }: PropsWithChildren) => {
         <div className="p-16">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Bithja Arts. All rights reserved.
+              © {new Date().getFullYear()} Bithj.a.rts. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a
@@ -102,12 +73,6 @@ export const Layout = ({ children }: PropsWithChildren) => {
                 className="text-gray-400 transition-colors hover:text-white"
               >
                 Instagram
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 transition-colors hover:text-white"
-              >
-                Twitter
               </a>
               <a
                 href="#"
