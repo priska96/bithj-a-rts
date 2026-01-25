@@ -8,7 +8,7 @@ import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
   return (
-    <div className="min-h-screen pb-12 bg-main-bg">
+    <div className="min-h-screen -main-bg">
       <HeroSection
         title="Get In Touch"
         subtitle="I'd love to hear from you. Send me a message and I'll get back to you as soon as possible."

@@ -92,6 +92,12 @@ export const Layout = ({ children }: PropsWithChildren) => {
             </p>
             <div className="flex space-x-6">
               <a
+                href="/faq"
+                className="text-gray-400 transition-colors hover:text-white"
+              >
+                FAQ
+              </a>
+              <a
                 href="#"
                 className="text-gray-400 transition-colors hover:text-white"
               >

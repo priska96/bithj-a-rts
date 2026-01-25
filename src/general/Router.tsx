@@ -9,6 +9,7 @@ import { Commissions } from "../commissions/Commissions";
 import { Contact } from "../contact/Contact";
 import { NotFound } from "./NotFound";
 import { Layout } from "./Layout";
+import { FAQ } from "../faq/FAQ";
 
 export const Router = () => (
   <Routes>
@@ -57,6 +58,14 @@ export const Router = () => (
       element={
         <Layout>
           <Contact />
+        </Layout>
+      }
+    />
+    <Route
+      path={RoutePaths.FAQ}
+      element={
+        <Layout>
+          <FAQ />
         </Layout>
       }
     />

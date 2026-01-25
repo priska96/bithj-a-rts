@@ -105,58 +105,6 @@ export const Commissions = () => {
         </Card>
       </Section>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg.white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-main-text mb-12">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-6">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-main-text mb-3">
-                Can I see the artwork before it's finished?
-              </h3>
-              <p className="text-gray-700">
-                Absolutely! You'll receive progress updates throughout the
-                creation process. After the initial concept approval, I'll share
-                photos at key stages so you can see your artwork coming to life.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-main-text mb-3">
-                What if I'm not satisfied with the result?
-              </h3>
-              <p className="text-gray-700">
-                Your satisfaction is my priority. We'll work together through
-                the concept and sketch phases to ensure we're aligned on the
-                vision before I begin the final piece. Minor adjustments can be
-                made during the creation process.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-main-text mb-3">
-                Do you ship internationally?
-              </h3>
-              <p className="text-gray-700">
-                Yes! I carefully package and ship artwork worldwide. Shipping
-                costs will be calculated based on your location and the artwork
-                size, and discussed during our initial consultation.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-main-text mb-3">
-                Can I commission a piece similar to one I've seen?
-              </h3>
-              <p className="text-gray-700">
-                Yes! My existing works can absolutely serve as inspiration.
-                We'll discuss what elements you love and create something unique
-                while maintaining those aesthetic qualities you admire.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <CTASection
         heading="Ready to Start Your Commission?"
