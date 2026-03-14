@@ -35,6 +35,19 @@
     "sold": "Verkauft",
     "available": "Verfügbar"
   },
+  "materials": {
+    "acrylicOnCanvas": "Acryl auf Leinwand",
+    "oilOnCanvas": "Öl auf Leinwand",
+    "mixedMediaOnCanvas": "Mixed Media auf Leinwand",
+    "watercolorAndInkOnPaper": "Aquarell und Tinte auf Papier",
+    "acrylicAndGoldLeafOnPanel": "Acryl und Blattgold auf Platte",
+    "oilOnLinen": "Öl auf Leinen"
+  },
+  "medium": {
+    "painting": "Malerei",
+    "mixedMedia": "Mixed Media",
+    "watercolor": "Aquarell"
+  },
   "footer": {
     "rights": "© {{year}} bith.j.a.rts. Alle Rechte vorbehalten.",
     "faq": "FAQ",

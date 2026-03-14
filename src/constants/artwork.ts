@@ -2,6 +2,7 @@ import kiwi from "../assets/kiwi.jpeg";
 import hands from "../assets/hands.jpeg";
 import type { ArtCategoryKey } from "./artCategory";
 import type { AvailabilityKey } from "./availability";
+import type { MaterialsKey, MediumKey } from "./artMaterials";
 
 export interface ArtPiece {
   id: number;
@@ -9,9 +10,9 @@ export interface ArtPiece {
   category: ArtCategoryKey;
   image: string;
   description: string;
-  materials: string;
+  materials: MaterialsKey;
   dimensions: string;
-  medium: string;
+  medium: MediumKey;
   price: string;
   availability: AvailabilityKey;
   series: string;
@@ -27,9 +28,9 @@ export const artPieces: ArtPiece[] = [
     image: hands,
     description:
       "An exploration of color and form that delves into the subconscious mind, bringing dreams and imagination to life through bold brushstrokes and vibrant hues.",
-    materials: "Acrylic on canvas",
+    materials: "acrylicOnCanvas",
     dimensions: "21 x 29,7 cm (BxH)",
-    medium: "Painting",
+    medium: "painting",
     price: "$2,500",
     availability: "available",
     series: "Dream Series",
@@ -44,9 +45,9 @@ export const artPieces: ArtPiece[] = [
     image: kiwi,
     description:
       "City life through an artistic lens, capturing the dynamic energy and architectural beauty of modern urban environments at golden hour.",
-    materials: "Oil on canvas",
+    materials: "oilOnCanvas",
     dimensions: "60 x 80 cm (BxH)",
-    medium: "Painting",
+    medium: "painting",
     price: "$1,800",
     availability: "available",
     series: "Urban Collection",
@@ -61,9 +62,9 @@ export const artPieces: ArtPiece[] = [
     image: "https://images.unsplash.com/photo-1578926314433-e2789279f4aa?w=800",
     description:
       "Contemporary portrait work that explores identity and emotion through expressive use of color and texture, creating a dialogue between subject and viewer.",
-    materials: "Mixed media on canvas",
+    materials: "mixedMediaOnCanvas",
     dimensions: '30" × 40" (76.2 × 101.6 cm)',
-    medium: "Mixed Media",
+    medium: "mixedMedia",
     price: "$2,200",
     availability: "sold",
     series: "Portrait Series",
@@ -78,9 +79,9 @@ export const artPieces: ArtPiece[] = [
     image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800",
     description:
       "Inspired by natural beauty, this piece celebrates the organic forms and colors found in the wilderness, inviting viewers to reconnect with nature.",
-    materials: "Watercolor and ink on paper",
+    materials: "watercolorAndInkOnPaper",
     dimensions: '18" × 24" (45.7 × 61 cm)',
-    medium: "Watercolor",
+    medium: "watercolor",
     price: "$950",
     availability: "available",
     series: "Nature Studies",
@@ -95,9 +96,9 @@ export const artPieces: ArtPiece[] = [
     image: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800",
     description:
       "Balance through geometry, exploring mathematical precision and organic flow in a harmonious composition of shapes and colors.",
-    materials: "Acrylic and gold leaf on panel",
+    materials: "acrylicAndGoldLeafOnPanel",
     dimensions: '20" × 20" (50.8 × 50.8 cm)',
-    medium: "Painting",
+    medium: "painting",
     price: "$1,500",
     availability: "available",
     series: "Geometric Series",
@@ -112,9 +113,9 @@ export const artPieces: ArtPiece[] = [
     image: "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=800",
     description:
       "Capturing the golden hour with rich, warm tones that evoke the peaceful transition from day to night.",
-    materials: "Oil on linen",
+    materials: "oilOnLinen",
     dimensions: '30" × 48" (76.2 × 121.9 cm)',
-    medium: "Painting",
+    medium: "painting",
     price: "$2,800",
     availability: "available",
     series: "Horizons",

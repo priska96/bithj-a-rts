@@ -35,6 +35,19 @@
     "sold": "Sold",
     "available": "Available"
   },
+  "materials": {
+    "acrylicOnCanvas": "Acrylic on canvas",
+    "oilOnCanvas": "Oil on canvas",
+    "mixedMediaOnCanvas": "Mixed media on canvas",
+    "watercolorAndInkOnPaper": "Watercolor and ink on paper",
+    "acrylicAndGoldLeafOnPanel": "Acrylic and gold leaf on panel",
+    "oilOnLinen": "Oil on linen"
+  },
+  "medium": {
+    "painting": "Painting",
+    "mixedMedia": "Mixed Media",
+    "watercolor": "Watercolor"
+  },
   "footer": {
     "rights": "© {{year}} bithj.a.rts. All rights reserved.",
     "faq": "FAQ",

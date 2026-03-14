@@ -27,8 +27,16 @@ export const ArtworkDetail = () => {
 
   const tableLabels = [
     { label: t("portfolio.details.year"), value: artwork.year },
-    { label: t("portfolio.details.medium"), value: artwork.medium },
-    { label: t("portfolio.details.materials"), value: artwork.materials },
+    {
+      label: t("portfolio.details.medium"),
+      value: t(`medium.${artwork.medium}`, { defaultValue: artwork.medium }),
+    },
+    {
+      label: t("portfolio.details.materials"),
+      value: t(`materials.${artwork.materials}`, {
+        defaultValue: artwork.materials,
+      }),
+    },
     { label: t("portfolio.details.dimensions"), value: artwork.dimensions },
     { label: t("portfolio.details.series"), value: artwork.series },
     { label: t("portfolio.details.price"), value: artwork.price, bold: true },
