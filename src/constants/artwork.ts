@@ -86,7 +86,7 @@ export const artPieces: ArtPiece[] = [
   },
   {
     id: 5,
-    title: "Wasser",
+    title: "Das Wasser dort oben",
     category: ArtCategory.Landscape,
     image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800",
     description:
@@ -202,7 +202,8 @@ export const artPieces: ArtPiece[] = [
     category: ArtCategory.Portrait,
     image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800",
     description:
-      "A portrait-focused piece exploring stylized proportions and presence.",
+      "Ein halb gezeichnetes Gesicht zwischen Licht und Schatten spiegelt den modernen Wunsch nach perfekter Schönheit – und erinnert zugleich daran, dass ein Teil unserer Identität immer verborgen bleibt. Hinter der Jagd nach dem perfekten Gesicht wächst eine stille Leere – als würde jeder Strich der Optimierung etwas Menschliches ausradieren. Je makelloser die Oberfläche wird, desto lauter fragt die Seele, wo sie in diesem Bild noch Platz hat.",
+    idea: "Die Idee zu diesem Bild entstand, als ich immer mehr Zeit auf Social Media verbrachte und dort unzählige Filter, Schönheitsideale und den Trend des „Looksmaxxing“ sah. Dabei fragte ich mich, was passiert, wenn die ständige Optimierung des Äußeren immer wichtiger wird – und was dabei vielleicht vom eigentlichen Menschen verloren geht.",
     materials: ArtMaterials.PastelOnCardboard,
     dimensions: "29.7 x 42 cm (BxH)",
     medium: ArtMediums.Painting,
