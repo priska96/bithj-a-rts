@@ -4,6 +4,7 @@ export enum ArtMaterials {
   AcrylicOnCardboard = "acrylicOnCardboard",
   WatercolorOnCardboard = "watercolorOnCardboard",
   PastelOnCardboard = "pastelOnCardboard",
+  PencilOnCardboard = "pencilOnCardboard",
   MixedMediaOnWood = "mixedMediaOnWood",
 }
 

@@ -7,7 +7,7 @@ import { artPieces } from "../../constants/artwork";
 import { ArtCategory } from "../../constants/artCategory";
 import { ImageCard } from "../../components/ui/ImageCard";
 
-const categories = [
+const categories: Array<ArtCategory | "All"> = [
   "All",
   ...new Set(artPieces.map((piece) => piece.category)),
 ];

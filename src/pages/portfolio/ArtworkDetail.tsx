@@ -39,7 +39,9 @@ export const ArtworkDetail = () => {
       }),
     },
     { label: t("portfolio.details.dimensions"), value: artwork.dimensions },
-    { label: t("portfolio.details.series"), value: artwork.series },
+    ...(artwork.series
+      ? [{ label: t("portfolio.details.series"), value: artwork.series }]
+      : []),
     { label: t("portfolio.details.price"), value: artwork.price, bold: true },
     {
       label: t("portfolio.details.availability"),
