@@ -1,14 +1,15 @@
-export const artMaterials = [
-  "acrylicOnCanvas",
-  "oilOnCanvas",
-  "mixedMediaOnCanvas",
-  "watercolorAndInkOnPaper",
-  "acrylicAndGoldLeafOnPanel",
-  "oilOnLinen",
-] as const;
+export enum ArtMaterials {
+  AcrylicOnCanvas = "acrylicOnCanvas",
+  MixedMediaOnCanvas = "mixedMediaOnCanvas",
+  AcrylicOnCardboard = "acrylicOnCardboard",
+  WatercolorOnCardboard = "watercolorOnCardboard",
+  PastelOnCardboard = "pastelOnCardboard",
+  MixedMediaOnWood = "mixedMediaOnWood",
+}
 
-export type MaterialsKey = (typeof artMaterials)[number];
-
-export const artMediums = ["painting", "mixedMedia", "watercolor"] as const;
-
-export type MediumKey = (typeof artMediums)[number];
+export enum ArtMediums {
+  Painting = "painting",
+  MixedMedia = "mixedMedia",
+  Watercolor = "watercolor",
+  Drawing = "drawing",
+}

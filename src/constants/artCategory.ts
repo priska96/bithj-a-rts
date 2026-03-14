@@ -1,13 +1,11 @@
-export const artCategories = [
-  "figureDrawing",
-  "allegoricalScene",
-  "abstractCollage",
-  "comic",
-  "landscape",
-  "stillLife",
-  "portrait",
-  "nature",
-  "abstract",
-] as const;
-
-export type ArtCategoryKey = (typeof artCategories)[number];
+export enum ArtCategory {
+  FigureDrawing = "figureDrawing",
+  AllegoricalScene = "allegoricalScene",
+  AbstractCollage = "abstractCollage",
+  Comic = "comic",
+  Landscape = "landscape",
+  StillLife = "stillLife",
+  Portrait = "portrait",
+  Nature = "nature",
+  Abstract = "abstract",
+}

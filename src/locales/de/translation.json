@@ -39,14 +39,16 @@
     "acrylicOnCanvas": "Acryl auf Leinwand",
     "oilOnCanvas": "Öl auf Leinwand",
     "mixedMediaOnCanvas": "Mixed Media auf Leinwand",
-    "watercolorAndInkOnPaper": "Aquarell und Tinte auf Papier",
-    "acrylicAndGoldLeafOnPanel": "Acryl und Blattgold auf Platte",
-    "oilOnLinen": "Öl auf Leinen"
+    "acrylicOnCardboard": "Acryl auf Karton",
+    "watercolorOnCardboard": "Aquarell auf Karton",
+    "pastelOnCardboard": "Pastell auf Karton",
+    "mixedMediaOnWood": "Mixed Media auf Holz"
   },
   "medium": {
     "painting": "Malerei",
     "mixedMedia": "Mixed Media",
-    "watercolor": "Aquarell"
+    "watercolor": "Aquarell",
+    "drawing": "Zeichnung"
   },
   "footer": {
     "rights": "© {{year}} bith.j.a.rts. Alle Rechte vorbehalten.",

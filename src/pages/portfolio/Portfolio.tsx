@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { HeroSection } from "../../components/ui/HeroSection";
 import { Button } from "../../components/ui/Button";
 import { artPieces } from "../../constants/artwork";
+import { ArtCategory } from "../../constants/artCategory";
 import { ImageCard } from "../../components/ui/ImageCard";
 
 const categories = [
@@ -13,7 +14,9 @@ const categories = [
 
 export const Portfolio = () => {
   const { t } = useTranslation();
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [selectedCategory, setSelectedCategory] = useState<ArtCategory | "All">(
+    "All"
+  );
 
   const categoryLabel = (category: string) =>
     t(`categories.${category}`, { defaultValue: category });

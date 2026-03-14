@@ -39,14 +39,16 @@
     "acrylicOnCanvas": "Acrylic on canvas",
     "oilOnCanvas": "Oil on canvas",
     "mixedMediaOnCanvas": "Mixed media on canvas",
-    "watercolorAndInkOnPaper": "Watercolor and ink on paper",
-    "acrylicAndGoldLeafOnPanel": "Acrylic and gold leaf on panel",
-    "oilOnLinen": "Oil on linen"
+    "acrylicOnCardboard": "Acrylic on cardboard",
+    "watercolorOnCardboard": "Watercolor on cardboard",
+    "pastelOnCardboard": "Pastel on cardboard",
+    "mixedMediaOnWood": "Mixed media on wood"
   },
   "medium": {
     "painting": "Painting",
     "mixedMedia": "Mixed Media",
-    "watercolor": "Watercolor"
+    "watercolor": "Watercolor",
+    "drawing": "Drawing"
   },
   "footer": {
     "rights": "© {{year}} bithj.a.rts. All rights reserved.",

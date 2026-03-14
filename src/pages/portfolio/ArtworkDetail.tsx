@@ -4,6 +4,7 @@ import { Button } from "../../components/ui/Button";
 import { Chip } from "../../components/ui/Chip";
 import { Image } from "../../components/ui/Image";
 import { artPieces } from "../../constants/artwork";
+import { Availability } from "../../constants/availability";
 import { RoutePaths } from "../../general/RoutePaths";
 import { NoArtworkFound } from "./NoArtworkFound";
 import { ShareIcon } from "../../components/icons/ShareIcon";
@@ -107,7 +108,7 @@ export const ArtworkDetail = () => {
                       {item.isStatus ? (
                         <span
                           className={`inline-flex rounded-full px-3 py-1 text-sm font-medium ${
-                            item.value === "available"
+                            item.value === Availability.Available
                               ? "bg-green-100 text-green-800"
                               : "bg-red-100 text-red-800"
                           }`}
@@ -133,7 +134,7 @@ export const ArtworkDetail = () => {
                 {t("portfolio.details.ctaTitle")}
               </h3>
               <p className="mt-2 text-main-text/70">
-                {artwork.availability === "available"
+                {artwork.availability === Availability.Available
                   ? t("portfolio.details.ctaAvailable")
                   : t("portfolio.details.ctaSold")}
               </p>
