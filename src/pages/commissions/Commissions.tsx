@@ -1,4 +1,5 @@
 import { RoutePaths } from "../../general/RoutePaths";
+import { useTranslation } from "react-i18next";
 import { Card } from "../../components/ui/Card";
 import { CTASection } from "../../components/ui/CTASection";
 import { HeroSection } from "../../components/ui/HeroSection";
@@ -10,45 +11,47 @@ import { TimeIcon } from "../../components/icons/TimeIcon";
 import { CommissionRequestForm } from "./CommissonRequestForm";
 
 export const Commissions = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection
-        title="Commission Custom Artwork"
-        subtitle="Let's create something uniquely yours. A personal artwork that tells your story."
+        title={t("commissions.heroTitle")}
+        subtitle={t("commissions.heroSubtitle")}
       />
       {/* Process Section */}
       <Section
-        title="The Journey to Your Unique Artwork"
-        subtitle="A collaborative process from concept to creation"
+        title={t("commissions.journeyTitle")}
+        subtitle={t("commissions.journeySubtitle")}
       >
         <div className="space-y-16">
           {/* Step 1 */}
           <CommissionStep
             step={1}
-            title="Personal Consultation"
-            description="Every commissioned piece begins with an open conversation. We'll discuss what moves you— thoughts, motifs, images, or life phases seeking expression. My existing works can serve as a starting point. From this dialogue, the foundation for your personal artwork emerges."
+            title={t("commissions.steps.consultationTitle")}
+            description={t("commissions.steps.consultationDescription")}
             imageSrc="https://images.unsplash.com/photo-1556139943-4bdca53adf1e?w=800"
-            imageAlt="Personal consultation"
+            imageAlt={t("commissions.steps.consultationAlt")}
           />
 
           {/* Step 2 */}
           <CommissionStep
             step={2}
-            title="Concept Development"
-            description="From our conversation, I develop an initial conceptual and visual design. Sketches and visual ideas make visible the direction the work can take. We'll discuss these drafts together, refining motifs, atmosphere, and details until everything feels right. Step by step, a clear vision of your personal artwork emerges."
+            title={t("commissions.steps.conceptTitle")}
+            description={t("commissions.steps.conceptDescription")}
             imageSrc="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=800"
-            imageAlt="Concept development"
+            imageAlt={t("commissions.steps.conceptAlt")}
             reverse
           />
 
           {/* Step 3 */}
           <CommissionStep
             step={3}
-            title="Creation"
-            description="Once our shared vision is established, the artistic process begins. I work along our design while staying true to my artistic signature. You'll receive progress updates throughout the creation process, ensuring the final piece exceeds your expectations."
+            title={t("commissions.steps.creationTitle")}
+            description={t("commissions.steps.creationDescription")}
             imageSrc="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800"
-            imageAlt="Artwork creation"
+            imageAlt={t("commissions.steps.creationAlt")}
           />
         </div>
       </Section>
@@ -58,47 +61,46 @@ export const Commissions = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Pricing */}
           <CommissionTerms
-            title="Investment"
+            title={t("commissions.investment.title")}
             icon={<CashIcon />}
             description={
               <>
-                Commissioned artworks start at{" "}
-                <span className="font-bold text-primary">$1,000</span>. The
-                exact pricing depends on size, complexity, and individual
-                requirements.
+                {t("commissions.investment.descriptionPrefix")}{" "}
+                <span className="font-bold text-primary">$1,000</span>
+                {t("commissions.investment.descriptionSuffix")}
               </>
             }
-            bullets={[
-              "50% deposit to begin the work",
-              "Remaining 50% before completion and delivery",
-              "All details discussed transparently upfront",
-            ]}
+            bullets={
+              t("commissions.investment.bullets", {
+                returnObjects: true,
+              }) as string[]
+            }
           />
 
           {/* Timeline */}
           <CommissionTerms
-            title="Timeline"
+            title={t("commissions.timeline.title")}
             icon={<TimeIcon />}
             description={
               <>
-                The creation process typically takes{" "}
-                <span className="font-bold text-primary">4-8 weeks</span>,
-                depending on the complexity and size of the artwork.
+                {t("commissions.timeline.descriptionPrefix")}{" "}
+                <span className="font-bold text-primary">4-8 weeks</span>
+                {t("commissions.timeline.descriptionSuffix")}
               </>
             }
-            bullets={[
-              "Initial consultation within 1-2 days",
-              "Concept sketches within 1-2 weeks",
-              "Regular progress updates during creation",
-            ]}
+            bullets={
+              t("commissions.timeline.bullets", {
+                returnObjects: true,
+              }) as string[]
+            }
           />
         </div>
       </Section>
 
       {/* Commission Request Form */}
       <Section
-        title="Request a Commission"
-        subtitle="Fill out the form below and I'll get back to you within 24 hours"
+        title={t("commissions.request.title")}
+        subtitle={t("commissions.request.subtitle")}
       >
         <Card>
           <CommissionRequestForm />
@@ -107,11 +109,11 @@ export const Commissions = () => {
 
       {/* CTA */}
       <CTASection
-        heading="Ready to Start Your Commission?"
-        subheading="Have questions before requesting a commission? Feel free to reach out!"
-        primaryButtonText="View Portfolio for Inspiration"
+        heading={t("commissions.request.ctaHeading")}
+        subheading={t("commissions.request.ctaSubheading")}
+        primaryButtonText={t("commissions.request.ctaPrimary")}
         primaryButtonLink={RoutePaths.PORTFOLIO}
-        secondaryButtonText="Contact Me"
+        secondaryButtonText={t("commissions.request.ctaSecondary")}
         secondaryButtonLink={RoutePaths.CONTACT}
       />
     </div>

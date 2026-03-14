@@ -1,4 +1,5 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "../../components/ui/Button";
 import { Chip } from "../../components/ui/Chip";
 import { Image } from "../../components/ui/Image";
@@ -11,28 +12,30 @@ import { Card } from "../../components/ui/Card";
 export type Artwork = (typeof artPieces)[number];
 
 export const ArtworkDetail = () => {
+  const { t } = useTranslation();
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const numericId = Number(id);
   const artwork = artPieces.find((piece) => piece.id === numericId);
 
+  if (!artwork) {
+    return <NoArtworkFound />;
+  }
+
   const tableLabels = [
-    { label: "Year", value: artwork.year },
-    { label: "Creation Date", value: artwork.creationDate },
-    { label: "Medium", value: artwork.medium },
-    { label: "Materials", value: artwork.materials },
-    { label: "Dimensions", value: artwork.dimensions },
-    { label: "Series", value: artwork.series },
-    { label: "Price", value: artwork.price, bold: true },
+    { label: t("portfolio.details.year"), value: artwork.year },
+    { label: t("portfolio.details.creationDate"), value: artwork.creationDate },
+    { label: t("portfolio.details.medium"), value: artwork.medium },
+    { label: t("portfolio.details.materials"), value: artwork.materials },
+    { label: t("portfolio.details.dimensions"), value: artwork.dimensions },
+    { label: t("portfolio.details.series"), value: artwork.series },
+    { label: t("portfolio.details.price"), value: artwork.price, bold: true },
     {
-      label: "Availability",
+      label: t("portfolio.details.availability"),
       value: artwork.availability,
       isStatus: true,
     },
   ];
-  if (!artwork) {
-    return <NoArtworkFound />;
-  }
 
   return (
     <div className="min-h-screen bg-main-bg py-12">
@@ -57,7 +60,7 @@ export const ArtworkDetail = () => {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          Back to Portfolio
+          {t("portfolio.backToPortfolio")}
         </Button>
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
@@ -79,7 +82,7 @@ export const ArtworkDetail = () => {
             {/* Artwork Information */}
             <Card>
               <h2 className="mb-4 text-2xl font-bold text-main-text">
-                Artwork Details
+                {t("portfolio.details.sectionTitle")}
               </h2>
               <dl className="space-y-4">
                 {tableLabels.map((item, idx) => (
@@ -99,7 +102,9 @@ export const ArtworkDetail = () => {
                               : "bg-red-100 text-red-800"
                           }`}
                         >
-                          {item.value}
+                          {item.value === "Available"
+                            ? t("common.available")
+                            : t("common.sold")}
                         </span>
                       ) : item.bold ? (
                         <span className="font-semibold">{item.value}</span>
@@ -115,25 +120,25 @@ export const ArtworkDetail = () => {
             {/* Call to Action */}
             <div className="rounded-lg bg-primary/20 p-6">
               <h3 className="text-xl font-bold text-main-text">
-                Interested in this piece?
+                {t("portfolio.details.ctaTitle")}
               </h3>
               <p className="mt-2 text-main-text/70">
                 {artwork.availability === "Available"
-                  ? "This artwork is currently available for purchase. Contact me to discuss acquisition or commission similar work."
-                  : "While this piece has been sold, I accept commissions for similar work. Get in touch to discuss your vision."}
+                  ? t("portfolio.details.ctaAvailable")
+                  : t("portfolio.details.ctaSold")}
               </p>
               <Link
                 to={RoutePaths.CONTACT}
                 className="mt-4 inline-block rounded-md bg-primary px-6 py-3 text-white transition-colors hover:bg-primary/80"
               >
-                Contact Me
+                {t("common.contactMe")}
               </Link>
             </div>
 
             {/* Share Section */}
             <div>
               <h3 className="mb-3 text-lg font-medium text-main-text">
-                Share this artwork
+                {t("portfolio.details.shareTitle")}
               </h3>
               <div className="flex gap-3">
                 <ShareIcon />

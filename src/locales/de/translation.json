@@ -1,0 +1,260 @@
+{
+  "common": {
+    "language": "Sprache",
+    "german": "Deutsch",
+    "english": "Englisch",
+    "email": "E-Mail",
+    "location": "Ort",
+    "responseTime": "Antwortzeit",
+    "available": "Verfügbar",
+    "sold": "Verkauft",
+    "submit": "Absenden",
+    "sending": "Nachricht wird gesendet...",
+    "viewPortfolio": "Portfolio ansehen",
+    "contactMe": "Kontakt aufnehmen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "portfolio": "Portfolio",
+    "about": "Über mich",
+    "commissions": "Auftragsarbeiten",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "rights": "© {{year}} bith.j.a.rts. Alle Rechte vorbehalten.",
+    "faq": "FAQ",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "loading": {
+    "default": "Wird geladen...",
+    "named": "{{name}} wird geladen..."
+  },
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "retry": "Erneut versuchen"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden.",
+    "action": "Zur Startseite"
+  },
+  "home": {
+    "hero": {
+      "imageAlt": "Hero-Bild der Künstlerin",
+      "titleLine1": "Visuelle Künstlerin &",
+      "titleLine2": "Kreative Seele",
+      "subtitle": "Ich verwandle Emotionen und Erfahrungen in fesselnde visuelle Geschichten",
+      "primaryButton": "Meine Werke entdecken",
+      "secondaryButton": "Lass uns zusammenarbeiten"
+    },
+    "featured": {
+      "title": "Ausgewählte Werke",
+      "subtitle": "Ein Einblick in meine neuesten Arbeiten",
+      "viewDetails": "Details ansehen",
+      "seeAllArtwork": "Alle Werke ansehen",
+      "artistAtWorkAlt": "Künstlerin bei der Arbeit"
+    },
+    "cta": {
+      "heading": "Lass uns gemeinsam etwas Schönes erschaffen",
+      "subheading": "Ob du ein Auftragswerk anfragen, an einem Projekt zusammenarbeiten oder einfach nur Hallo sagen möchtest – ich freue mich auf deine Nachricht.",
+      "primaryButton": "Kontakt aufnehmen"
+    },
+    "about": {
+      "title": "Über mich",
+      "paragraph1": "Hallo! Ich bin eine leidenschaftliche visuelle Künstlerin, die sich der Erforschung von Farbe, Emotion und Form widmet. Meine künstlerische Reise begann vor über einem Jahrzehnt, und seitdem faszinieren mich die unendlichen Möglichkeiten kreativen Ausdrucks.",
+      "paragraph2": "Meine Arbeiten reichen von ausdrucksstarken abstrakten Werken bis hin zu intimen Porträts – jedes einzelne mit dem Ziel, Emotionen zu wecken und Gespräche anzustoßen.",
+      "primaryButton": "Meine Geschichte lesen",
+      "secondaryButton": "Portfolio ansehen"
+    }
+  },
+  "contact": {
+    "heroTitle": "Kontakt aufnehmen",
+    "heroSubtitle": "Ich freue mich, von dir zu hören. Sende mir eine Nachricht und ich melde mich so schnell wie möglich zurück.",
+    "emailValue": "deine-email@beispiel.de",
+    "locationValue": "Deine Stadt, Land",
+    "responseValue": "Innerhalb von 24–48 Stunden",
+    "form": {
+      "name": "Name *",
+      "email": "E-Mail *",
+      "subject": "Betreff *",
+      "message": "Nachricht *",
+      "placeholder": "Stelle mir jede Frage, die du möchtest...",
+      "submit": "Absenden",
+      "sending": "Nachricht wird gesendet...",
+      "emailIntro": "bithj.a.rts du hast eine neue Kontaktanfrage erhalten.",
+      "emailSubjectPrefix": "Allgemeine Kontaktanfrage: "
+    }
+  },
+  "about": {
+    "heroTitle": "Die Künstlerin",
+    "heroSubtitle": "\"Kunst ist nicht das, was du siehst, sondern das, was du andere sehen lässt.\"",
+    "storyTitle": "Meine Geschichte",
+    "storyAlt": "Porträt der Künstlerin",
+    "storyParagraph1": "Hallo! Ich bin eine leidenschaftliche visuelle Künstlerin, die sich der Erforschung von Farbe, Emotion und Form widmet. Meine künstlerische Reise begann vor über einem Jahrzehnt, und seitdem faszinieren mich die unendlichen Möglichkeiten kreativen Ausdrucks.",
+    "storyParagraph2": "Meine Arbeiten reichen von ausdrucksstarken abstrakten Werken bis hin zu intimen Porträts – jedes einzelne mit dem Ziel, Emotionen zu wecken und Gespräche anzustoßen. Ich glaube, dass Kunst die Kraft hat, uns zu verbinden, uns herauszufordern und uns die Welt aus neuen Perspektiven sehen zu lassen.",
+    "storyParagraph3": "Ob mit traditionellen Medien oder digitalen Werkzeugen – ich strebe danach, Werke zu schaffen, die tief mit den Betrachtenden resonieren und die Zeit überdauern. Meine künstlerische Praxis ist geprägt von Experimentierfreude, Authentizität und einer tiefen Liebe zum kreativen Prozess.",
+    "philosophyTitle": "Künstlerische Philosophie",
+    "philosophyQuote": "Für mich ist Kunst mehr als nur das Erschaffen schöner Objekte – sie ist ein Dialog zwischen der Künstlerin, dem Werk und den Betrachtenden.",
+    "philosophyParagraph1": "Ich glaube an die transformative Kraft der Farbe. Wie Farbtöne miteinander interagieren, kontrastieren und harmonieren, kann Emotionen hervorrufen, die Worte nicht ausdrücken können. Meine Farbwahl ist bewusst und zugleich intuitiv – stets auf der Suche nach einer unmittelbaren Reaktion im Gegenüber.",
+    "philosophyParagraph2": "Mein Prozess ist geprägt von stetiger Erkundung und Experimentierfreude. Ich habe keine Angst davor, Risiken einzugehen, neue Techniken auszuprobieren oder unbekanntes Terrain zu betreten. Einige meiner bedeutungsvollsten Arbeiten entstanden in Momenten der Unsicherheit und des kreativen Spiels.",
+    "ctaHeading": "Lass uns gemeinsam gestalten",
+    "ctaSubheading": "Interessierst du dich für ein Auftragswerk, eine Zusammenarbeit oder möchtest du mehr über meine Arbeit erfahren?",
+    "ctaPrimary": "Portfolio ansehen",
+    "ctaSecondary": "Kontakt aufnehmen",
+    "paletteTitle": "🎨 Farbpalette für religiöse Kunstportfolios",
+    "paletteSubtitle": "Gedämpfte Beige- und naturinspirierte Töne",
+    "palette": {
+      "backgrounds": "Grundlegende Hintergründe",
+      "nature": "Natur- und Erdtöne",
+      "accents": "Text- und sakrale Akzente",
+      "parchmentBeige": "Pergamentbeige",
+      "warmLimestone": "Warmer Kalkstein",
+      "softSand": "Sanfter Sand",
+      "oliveSage": "Olive Salbei",
+      "driedMoss": "Getrocknetes Moos",
+      "clayUmber": "Tonumbra",
+      "weatheredStone": "Verwitterter Stein",
+      "deepViolet": "Tiefes Violett",
+      "royalPurple": "Königspurpur",
+      "twilightAmethyst": "Dämmeramethyst"
+    }
+  },
+  "portfolio": {
+    "heroTitle": "Mein Portfolio",
+    "heroSubtitle": "Entdecke meine Sammlung von Kunstwerken",
+    "all": "Alle",
+    "notFoundTitle": "Kunstwerk nicht gefunden",
+    "notFoundText": "Das gesuchte Kunstwerk existiert nicht.",
+    "backToPortfolio": "Zurück zum Portfolio",
+    "details": {
+      "year": "Jahr",
+      "creationDate": "Entstehungsdatum",
+      "medium": "Medium",
+      "materials": "Materialien",
+      "dimensions": "Maße",
+      "series": "Serie",
+      "price": "Preis",
+      "availability": "Verfügbarkeit",
+      "sectionTitle": "Details zum Kunstwerk",
+      "ctaTitle": "Interessiert an diesem Werk?",
+      "ctaAvailable": "Dieses Kunstwerk ist aktuell zum Kauf verfügbar. Kontaktiere mich, um den Erwerb zu besprechen oder ein ähnliches Werk in Auftrag zu geben.",
+      "ctaSold": "Auch wenn dieses Werk bereits verkauft wurde, nehme ich Aufträge für ähnliche Arbeiten an. Melde dich gerne, um deine Idee zu besprechen.",
+      "shareTitle": "Dieses Kunstwerk teilen"
+    }
+  },
+  "commissions": {
+    "heroTitle": "Individuelles Kunstwerk beauftragen",
+    "heroSubtitle": "Lass uns etwas Einzigartiges für dich erschaffen. Ein persönliches Kunstwerk, das deine Geschichte erzählt.",
+    "journeyTitle": "Der Weg zu deinem einzigartigen Kunstwerk",
+    "journeySubtitle": "Ein gemeinsamer Prozess von der Idee bis zur Umsetzung",
+    "steps": {
+      "consultationTitle": "Persönliche Beratung",
+      "consultationDescription": "Jedes Auftragswerk beginnt mit einem offenen Gespräch. Wir sprechen darüber, was dich bewegt – Gedanken, Motive, Bilder oder Lebensphasen, die Ausdruck suchen. Meine bestehenden Werke können dabei als Ausgangspunkt dienen. Aus diesem Dialog entsteht das Fundament für dein persönliches Kunstwerk.",
+      "consultationAlt": "Persönliche Beratung",
+      "conceptTitle": "Konzeptentwicklung",
+      "conceptDescription": "Aus unserem Gespräch entwickle ich ein erstes konzeptionelles und visuelles Design. Skizzen und Bildideen machen sichtbar, welche Richtung das Werk einschlagen kann. Diese Entwürfe besprechen wir gemeinsam und verfeinern Motive, Atmosphäre und Details, bis alles stimmig ist. Schritt für Schritt entsteht so eine klare Vision deines persönlichen Kunstwerks.",
+      "conceptAlt": "Konzeptentwicklung",
+      "creationTitle": "Entstehung",
+      "creationDescription": "Sobald unsere gemeinsame Vision steht, beginnt der künstlerische Prozess. Ich arbeite entlang unseres Entwurfs und bleibe dabei meiner künstlerischen Handschrift treu. Während des gesamten Prozesses erhältst du Einblicke in den Fortschritt, damit das fertige Werk deine Erwartungen übertrifft.",
+      "creationAlt": "Entstehung des Kunstwerks"
+    },
+    "investment": {
+      "title": "Investition",
+      "descriptionPrefix": "Auftragsarbeiten beginnen bei",
+      "descriptionSuffix": ". Der genaue Preis hängt von Größe, Komplexität und individuellen Anforderungen ab.",
+      "bullets": [
+        "50 % Anzahlung zum Start der Arbeit",
+        "Die restlichen 50 % vor Fertigstellung und Lieferung",
+        "Alle Details werden vorab transparent besprochen"
+      ]
+    },
+    "timeline": {
+      "title": "Zeitrahmen",
+      "descriptionPrefix": "Der Entstehungsprozess dauert in der Regel",
+      "descriptionSuffix": ", abhängig von Komplexität und Größe des Kunstwerks.",
+      "bullets": [
+        "Erstgespräch innerhalb von 1–2 Tagen",
+        "Konzeptskizzen innerhalb von 1–2 Wochen",
+        "Regelmäßige Fortschrittsupdates während der Umsetzung"
+      ]
+    },
+    "request": {
+      "title": "Auftragsarbeit anfragen",
+      "subtitle": "Fülle das Formular unten aus und ich melde mich innerhalb von 24 Stunden bei dir",
+      "ctaHeading": "Bereit, deine Auftragsarbeit zu starten?",
+      "ctaSubheading": "Du hast Fragen, bevor du eine Anfrage stellst? Melde dich jederzeit gern!",
+      "ctaPrimary": "Portfolio zur Inspiration ansehen",
+      "ctaSecondary": "Kontakt aufnehmen"
+    },
+    "form": {
+      "submit": "Anfrage für ein Kunstwerk absenden",
+      "sending": "Nachricht wird gesendet...",
+      "name": "Vollständiger Name *",
+      "email": "E-Mail *",
+      "phone": "Telefonnummer (optional)",
+      "artworkType": "Art des Kunstwerks *",
+      "size": "Bevorzugte Größe *",
+      "budget": "Budget *",
+      "timeline": "Bevorzugter Zeitrahmen *",
+      "description": "Projektbeschreibung *",
+      "descriptionPlaceholder": "Erzähle mir von deiner Vision... Was inspiriert dich? Welche Emotionen oder Themen möchtest du erkunden? Gibt es bestimmte Farben, Motive oder bestehende Werke von mir, die dich ansprechen?",
+      "consent": "* Durch das Absenden dieses Formulars stimmst du zu, bezüglich deiner Anfrage für ein Kunstwerk kontaktiert zu werden.",
+      "emailIntro": "bithj.a.arts du hast eine neue Anfrage für eine Auftragsarbeit erhalten.",
+      "emailSubjectPrefix": "Anfrage für ein Kunstwerk: ",
+      "message": {
+        "name": "Name",
+        "email": "E-Mail",
+        "phone": "Telefonnummer",
+        "artworkType": "Art des Kunstwerks",
+        "size": "Größe",
+        "budget": "Budget",
+        "timeline": "Zeitrahmen",
+        "description": "Projektbeschreibung"
+      },
+      "options": {
+        "selectType": "Art auswählen...",
+        "abstract": "Abstrakt",
+        "portrait": "Porträt",
+        "landscape": "Landschaft",
+        "mixedMedia": "Mixed Media",
+        "other": "Sonstiges",
+        "selectSize": "Größe auswählen...",
+        "small": "Klein (bis 24\")",
+        "medium": "Mittel (24\"-40\")",
+        "large": "Groß (40\"-60\")",
+        "xlarge": "Sehr groß (60\"+)",
+        "selectBudget": "Budget auswählen...",
+        "selectTimeline": "Zeitrahmen auswählen...",
+        "flexible": "Flexibel",
+        "weeks4to6": "4–6 Wochen",
+        "weeks6to8": "6–8 Wochen",
+        "months2to3": "2–3 Monate"
+      }
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Kann ich das Kunstwerk sehen, bevor es fertig ist?",
+        "answer": "Absolut! Du erhältst während des gesamten Entstehungsprozesses Updates. Nach der Freigabe des ersten Konzepts teile ich Fotos wichtiger Zwischenstände, damit du miterleben kannst, wie dein Kunstwerk entsteht."
+      },
+      {
+        "question": "Was ist, wenn ich mit dem Ergebnis nicht zufrieden bin?",
+        "answer": "Deine Zufriedenheit hat für mich oberste Priorität. Wir arbeiten gemeinsam durch die Konzept- und Skizzenphase, damit wir uns über die Vision einig sind, bevor ich das finale Werk beginne. Kleinere Anpassungen können während der Entstehung vorgenommen werden."
+      },
+      {
+        "question": "Versendest du international?",
+        "answer": "Ja! Ich verpacke und versende Kunstwerke sorgfältig weltweit. Die Versandkosten werden je nach Standort und Größe des Werks berechnet und in unserem ersten Gespräch transparent besprochen."
+      },
+      {
+        "question": "Kann ich ein Werk beauftragen, das einem bereits gesehenen ähnelt?",
+        "answer": "Ja! Meine bestehenden Arbeiten können sehr gern als Inspiration dienen. Wir besprechen, welche Elemente dir gefallen, und schaffen daraus etwas Eigenständiges, das die Ästhetik bewahrt, die dich anspricht."
+      }
+    ]
+  },
+  "email": {
+    "success": "Danke. Eine E-Mail wurde gesendet :)",
+    "error": "E-Mail fehlgeschlagen:"
+  }
+}

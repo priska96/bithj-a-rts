@@ -1,4 +1,5 @@
 import { useState, ChangeEvent, FormEvent } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "../../components/ui/Button";
 import { InputField } from "../../components/ui/InputField";
 import { TextArea } from "../../components/ui/TextArea";
@@ -13,13 +14,14 @@ interface FormData {
 }
 
 export const ContactForm = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
-  const [status, setStatus] = useState("Abschicken");
+  const [status, setStatus] = useState(t("contact.form.submit"));
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -32,17 +34,17 @@ export const ContactForm = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus("Versende Nachricht...");
+    setStatus(t("contact.form.sending"));
     sendEmail(CONTACT_TEMPLATE_ID, {
       ...formData,
-      intro: "bithja.arts du hast eine neue Kontaktanfrage erhalten.",
-      subject: "Allgemeine Kontaktanfrage:" + formData.subject,
+      intro: t("contact.form.emailIntro"),
+      subject: `${t("contact.form.emailSubjectPrefix")}${formData.subject}`,
       time: new Date().toISOString(),
     });
 
     setTimeout(() => {
       setFormData({ name: "", email: "", subject: "", message: "" });
-      setStatus("Abschicken");
+      setStatus(t("contact.form.submit"));
     }, 2000);
   };
 
@@ -50,7 +52,7 @@ export const ContactForm = () => {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <InputField
-          label="Name *"
+          label={t("contact.form.name")}
           value={formData.name}
           onChange={handleChange}
           name="name"
@@ -58,7 +60,7 @@ export const ContactForm = () => {
         />
 
         <InputField
-          label="Email *"
+          label={t("contact.form.email")}
           value={formData.email}
           onChange={handleChange}
           name="email"
@@ -67,7 +69,7 @@ export const ContactForm = () => {
       </div>
 
       <InputField
-        label="Betreff *"
+        label={t("contact.form.subject")}
         value={formData.subject}
         onChange={handleChange}
         name="subject"
@@ -75,12 +77,12 @@ export const ContactForm = () => {
       />
 
       <TextArea
-        label="Nachricht *"
+        label={t("contact.form.message")}
         value={formData.message}
         onChange={handleChange}
         name="message"
         required
-        placeholder="Stelle mir jede Frage, die du möchtest..."
+        placeholder={t("contact.form.placeholder")}
       />
 
       <div>

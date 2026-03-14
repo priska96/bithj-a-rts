@@ -1,4 +1,5 @@
 import { useState, ChangeEvent, FormEvent } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "../../components/ui/Button";
 import { InputField } from "../../components/ui/InputField";
 import { SelectField } from "../../components/ui/SelectField";
@@ -17,6 +18,7 @@ interface CommissionForm {
   description: string;
 }
 export const CommissionRequestForm = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<CommissionForm>({
     name: "",
     email: "",
@@ -27,7 +29,7 @@ export const CommissionRequestForm = () => {
     timeline: "",
     description: "",
   });
-  const [status, setStatus] = useState("Anfrage für ein Kunstwerk absenden");
+  const [status, setStatus] = useState(t("commissions.form.submit"));
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -41,13 +43,13 @@ export const CommissionRequestForm = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    setStatus("Versende Nachricht...");
+    setStatus(t("commissions.form.sending"));
     sendEmail(CONTACT_TEMPLATE_ID, {
       name: formData.name,
       email: formData.email,
-      intro: "bithja.arts du hast eine neue Kaufanfrage erhalten.",
-      subject: "Kaufanfrage:" + formData.artworkType,
-      message: `Name: ${formData.name}\nEmail: ${formData.email}\nHandynr: ${formData.phone}\nKunstwerkart: ${formData.artworkType}\nGröße: ${formData.size}\nBudget: ${formData.budget}\nZeitlinie: ${formData.timeline}\nProjektbeschreibung:\n${formData.description}`,
+      intro: t("commissions.form.emailIntro"),
+      subject: `${t("commissions.form.emailSubjectPrefix")}${formData.artworkType}`,
+      message: `${t("commissions.form.message.name")}: ${formData.name}\n${t("commissions.form.message.email")}: ${formData.email}\n${t("commissions.form.message.phone")}: ${formData.phone}\n${t("commissions.form.message.artworkType")}: ${formData.artworkType}\n${t("commissions.form.message.size")}: ${formData.size}\n${t("commissions.form.message.budget")}: ${formData.budget}\n${t("commissions.form.message.timeline")}: ${formData.timeline}\n${t("commissions.form.message.description")}:\n${formData.description}`,
       time: new Date().toISOString(),
     });
 
@@ -62,7 +64,7 @@ export const CommissionRequestForm = () => {
         timeline: "",
         description: "",
       });
-      setStatus("Anfrage für ein Kunstwerk absenden");
+      setStatus(t("commissions.form.submit"));
     }, 2000);
   };
   return (
@@ -70,7 +72,7 @@ export const CommissionRequestForm = () => {
       {/* Personal Information */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <InputField
-          label="Vollständiger Name *"
+          label={t("commissions.form.name")}
           type="text"
           name="name"
           required
@@ -79,7 +81,7 @@ export const CommissionRequestForm = () => {
         />
 
         <InputField
-          label="Email *"
+          label={t("commissions.form.email")}
           type="email"
           name="email"
           required
@@ -89,7 +91,7 @@ export const CommissionRequestForm = () => {
       </div>
 
       <InputField
-        label="Handynummer (Optional)"
+        label={t("commissions.form.phone")}
         type="tel"
         name="phone"
         value={formData.phone}
@@ -99,45 +101,57 @@ export const CommissionRequestForm = () => {
       {/* Artwork Details */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <SelectField
-          label="Kunstwerkart *"
+          label={t("commissions.form.artworkType")}
           name="artworkType"
           required
           value={formData.artworkType}
           onChange={handleChange}
           options={[
-            { value: "", label: "Select type..." },
-            { value: "abstract", label: "Abstract" },
-            { value: "portrait", label: "Portrait" },
-            { value: "landscape", label: "Landscape" },
-            { value: "mixed-media", label: "Mixed Media" },
-            { value: "other", label: "Other" },
+            { value: "", label: t("commissions.form.options.selectType") },
+            {
+              value: "abstract",
+              label: t("commissions.form.options.abstract"),
+            },
+            {
+              value: "portrait",
+              label: t("commissions.form.options.portrait"),
+            },
+            {
+              value: "landscape",
+              label: t("commissions.form.options.landscape"),
+            },
+            {
+              value: "mixed-media",
+              label: t("commissions.form.options.mixedMedia"),
+            },
+            { value: "other", label: t("commissions.form.options.other") },
           ]}
         />
         <SelectField
-          label="Bevorzugte Größe *"
+          label={t("commissions.form.size")}
           name="size"
           required
           value={formData.size}
           onChange={handleChange}
           options={[
-            { value: "", label: "Select size..." },
-            { value: "small", label: 'Small (up to 24")' },
-            { value: "medium", label: 'Medium (24"-40")' },
-            { value: "large", label: 'Large (40"-60")' },
-            { value: "xlarge", label: 'Extra Large (60"+)' },
+            { value: "", label: t("commissions.form.options.selectSize") },
+            { value: "small", label: t("commissions.form.options.small") },
+            { value: "medium", label: t("commissions.form.options.medium") },
+            { value: "large", label: t("commissions.form.options.large") },
+            { value: "xlarge", label: t("commissions.form.options.xlarge") },
           ]}
         />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <SelectField
-          label="Budget *"
+          label={t("commissions.form.budget")}
           name="budget"
           required
           value={formData.budget}
           onChange={handleChange}
           options={[
-            { value: "", label: "Select budget..." },
+            { value: "", label: t("commissions.form.options.selectBudget") },
             { value: "1000-2500", label: "$1,000 - $2,500" },
             { value: "2500-5000", label: "$2,500 - $5,000" },
             { value: "5000-10000", label: "$5,000 - $10,000" },
@@ -145,27 +159,39 @@ export const CommissionRequestForm = () => {
           ]}
         />
         <SelectField
-          label="Bevorzugte Zeitlinie *"
+          label={t("commissions.form.timeline")}
           name="timeline"
           required
           value={formData.timeline}
           onChange={handleChange}
           options={[
-            { value: "", label: "Select timeline..." },
-            { value: "flexible", label: "Flexible" },
-            { value: "4-6weeks", label: "4-6 weeks" },
-            { value: "6-8weeks", label: "6-8 weeks" },
-            { value: "2-3months", label: "2-3 months" },
+            { value: "", label: t("commissions.form.options.selectTimeline") },
+            {
+              value: "flexible",
+              label: t("commissions.form.options.flexible"),
+            },
+            {
+              value: "4-6weeks",
+              label: t("commissions.form.options.weeks4to6"),
+            },
+            {
+              value: "6-8weeks",
+              label: t("commissions.form.options.weeks6to8"),
+            },
+            {
+              value: "2-3months",
+              label: t("commissions.form.options.months2to3"),
+            },
           ]}
         />
       </div>
 
       <TextArea
-        label="Projektbeschreibung *"
+        label={t("commissions.form.description")}
         name="description"
         required
         value={formData.description}
-        placeholder="Erzähle mir von deiner Vision... Was inspiriert dich? Welche Emotionen oder Themen möchtest du erkunden? Gibt es bestimmte Farben, Motive oder bestehende Werke von mir, die dich ansprechen?"
+        placeholder={t("commissions.form.descriptionPlaceholder")}
         onChange={handleChange}
         rows={6}
       />
@@ -179,8 +205,7 @@ export const CommissionRequestForm = () => {
       </Button>
 
       <p className="text-sm text-main-text/70 text-center">
-        * Durch das Absenden dieses Formulars stimmen Sie zu, bezüglich Ihrer
-        Anfrage für ein Kunstwerk kontaktiert zu werden.
+        {t("commissions.form.consent")}
       </p>
     </form>
   );

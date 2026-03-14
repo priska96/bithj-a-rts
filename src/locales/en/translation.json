@@ -1,0 +1,260 @@
+{
+  "common": {
+    "language": "Language",
+    "german": "German",
+    "english": "English",
+    "email": "Email",
+    "location": "Location",
+    "responseTime": "Response time",
+    "available": "Available",
+    "sold": "Sold",
+    "submit": "Submit",
+    "sending": "Sending message...",
+    "viewPortfolio": "View portfolio",
+    "contactMe": "Contact me"
+  },
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "commissions": "Commissions",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "© {{year}} bithj.a.rts. All rights reserved.",
+    "faq": "FAQ",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "loading": {
+    "default": "Loading...",
+    "named": "Loading {{name}}..."
+  },
+  "error": {
+    "title": "Something went wrong",
+    "retry": "Try again"
+  },
+  "notFound": {
+    "title": "Page not found.",
+    "action": "Go home"
+  },
+  "home": {
+    "hero": {
+      "imageAlt": "Artist hero image",
+      "titleLine1": "Visual Artist &",
+      "titleLine2": "Creative Soul",
+      "subtitle": "Transforming emotions and experiences into captivating visual stories",
+      "primaryButton": "Explore my work",
+      "secondaryButton": "Let's collaborate"
+    },
+    "featured": {
+      "title": "Featured works",
+      "subtitle": "A glimpse into my latest creations",
+      "viewDetails": "View details",
+      "seeAllArtwork": "See all artwork",
+      "artistAtWorkAlt": "Artist at work"
+    },
+    "cta": {
+      "heading": "Let's create something beautiful together",
+      "subheading": "Whether you're interested in commissioning a piece, collaborating on a project, or just want to say hello, I'd love to hear from you.",
+      "primaryButton": "Get in touch"
+    },
+    "about": {
+      "title": "About me",
+      "paragraph1": "Hello! I'm a passionate visual artist dedicated to exploring the intersection of color, emotion, and form. My journey in art began over a decade ago, and since then, I've been captivated by the endless possibilities of creative expression.",
+      "paragraph2": "My work ranges from bold abstract pieces to intimate portraits, each created with the intention of evoking emotion and sparking conversation.",
+      "primaryButton": "Read my story",
+      "secondaryButton": "View portfolio"
+    }
+  },
+  "contact": {
+    "heroTitle": "Get in touch",
+    "heroSubtitle": "I'd love to hear from you. Send me a message and I'll get back to you as soon as possible.",
+    "emailValue": "your-email@example.com",
+    "locationValue": "Your city, country",
+    "responseValue": "Within 24-48 hours",
+    "form": {
+      "name": "Name *",
+      "email": "Email *",
+      "subject": "Subject *",
+      "message": "Message *",
+      "placeholder": "Ask me anything you like...",
+      "submit": "Send",
+      "sending": "Sending message...",
+      "emailIntro": "bithj.a.rts you received a new contact request.",
+      "emailSubjectPrefix": "General contact request: "
+    }
+  },
+  "about": {
+    "heroTitle": "The artist",
+    "heroSubtitle": "\"Art is not what you see, but what you make others see\"",
+    "storyTitle": "My story",
+    "storyAlt": "Artist portrait",
+    "storyParagraph1": "Hello! I'm a passionate visual artist dedicated to exploring the intersection of color, emotion, and form. My journey in art began over a decade ago, and since then, I've been captivated by the endless possibilities of creative expression.",
+    "storyParagraph2": "My work ranges from bold abstract pieces to intimate portraits, each created with the intention of evoking emotion and sparking conversation. I believe that art has the power to connect us, challenge us, and help us see the world through new perspectives.",
+    "storyParagraph3": "Whether working with traditional media or digital tools, I strive to create pieces that resonate deeply with viewers and stand the test of time. My artistic practice is rooted in experimentation, authenticity, and a deep love for the creative process.",
+    "philosophyTitle": "Artistic philosophy",
+    "philosophyQuote": "For me, art is more than just creating beautiful objects—it's a dialogue between the artist, the artwork, and the viewer.",
+    "philosophyParagraph1": "I believe in the transformative power of color. The way hues interact, contrast, and harmonize can evoke emotions that words cannot express. My palette choices are deliberate yet intuitive, always seeking to create a visceral response in the viewer.",
+    "philosophyParagraph2": "My process is one of constant exploration and experimentation. I'm not afraid to take risks, try new techniques, or venture into unfamiliar territory. Some of my most meaningful work has emerged from moments of uncertainty and creative play.",
+    "ctaHeading": "Let's create together",
+    "ctaSubheading": "Interested in commissioning a piece, collaborating on a project, or learning more about my work?",
+    "ctaPrimary": "View portfolio",
+    "ctaSecondary": "Get in touch",
+    "paletteTitle": "🎨 Religious art portfolio palette",
+    "paletteSubtitle": "Muted beige & nature-inspired tones",
+    "palette": {
+      "backgrounds": "Core backgrounds",
+      "nature": "Nature & earth tones",
+      "accents": "Text & sacred accents",
+      "parchmentBeige": "Parchment beige",
+      "warmLimestone": "Warm limestone",
+      "softSand": "Soft sand",
+      "oliveSage": "Olive sage",
+      "driedMoss": "Dried moss",
+      "clayUmber": "Clay umber",
+      "weatheredStone": "Weathered stone",
+      "deepViolet": "Deep violet",
+      "royalPurple": "Royal purple",
+      "twilightAmethyst": "Twilight amethyst"
+    }
+  },
+  "portfolio": {
+    "heroTitle": "My portfolio",
+    "heroSubtitle": "Explore my collection of artwork",
+    "all": "All",
+    "notFoundTitle": "Artwork not found",
+    "notFoundText": "The artwork you're looking for doesn't exist.",
+    "backToPortfolio": "Back to portfolio",
+    "details": {
+      "year": "Year",
+      "creationDate": "Creation date",
+      "medium": "Medium",
+      "materials": "Materials",
+      "dimensions": "Dimensions",
+      "series": "Series",
+      "price": "Price",
+      "availability": "Availability",
+      "sectionTitle": "Artwork details",
+      "ctaTitle": "Interested in this piece?",
+      "ctaAvailable": "This artwork is currently available for purchase. Contact me to discuss acquisition or commission similar work.",
+      "ctaSold": "While this piece has been sold, I accept commissions for similar work. Get in touch to discuss your vision.",
+      "shareTitle": "Share this artwork"
+    }
+  },
+  "commissions": {
+    "heroTitle": "Commission custom artwork",
+    "heroSubtitle": "Let's create something uniquely yours. A personal artwork that tells your story.",
+    "journeyTitle": "The journey to your unique artwork",
+    "journeySubtitle": "A collaborative process from concept to creation",
+    "steps": {
+      "consultationTitle": "Personal consultation",
+      "consultationDescription": "Every commissioned piece begins with an open conversation. We'll discuss what moves you—thoughts, motifs, images, or life phases seeking expression. My existing works can serve as a starting point. From this dialogue, the foundation for your personal artwork emerges.",
+      "consultationAlt": "Personal consultation",
+      "conceptTitle": "Concept development",
+      "conceptDescription": "From our conversation, I develop an initial conceptual and visual design. Sketches and visual ideas make visible the direction the work can take. We'll discuss these drafts together, refining motifs, atmosphere, and details until everything feels right. Step by step, a clear vision of your personal artwork emerges.",
+      "conceptAlt": "Concept development",
+      "creationTitle": "Creation",
+      "creationDescription": "Once our shared vision is established, the artistic process begins. I work along our design while staying true to my artistic signature. You'll receive progress updates throughout the creation process, ensuring the final piece exceeds your expectations.",
+      "creationAlt": "Artwork creation"
+    },
+    "investment": {
+      "title": "Investment",
+      "descriptionPrefix": "Commissioned artworks start at",
+      "descriptionSuffix": ". The exact pricing depends on size, complexity, and individual requirements.",
+      "bullets": [
+        "50% deposit to begin the work",
+        "Remaining 50% before completion and delivery",
+        "All details discussed transparently upfront"
+      ]
+    },
+    "timeline": {
+      "title": "Timeline",
+      "descriptionPrefix": "The creation process typically takes",
+      "descriptionSuffix": ", depending on the complexity and size of the artwork.",
+      "bullets": [
+        "Initial consultation within 1-2 days",
+        "Concept sketches within 1-2 weeks",
+        "Regular progress updates during creation"
+      ]
+    },
+    "request": {
+      "title": "Request a commission",
+      "subtitle": "Fill out the form below and I'll get back to you within 24 hours",
+      "ctaHeading": "Ready to start your commission?",
+      "ctaSubheading": "Have questions before requesting a commission? Feel free to reach out!",
+      "ctaPrimary": "View portfolio for inspiration",
+      "ctaSecondary": "Contact me"
+    },
+    "form": {
+      "submit": "Submit artwork request",
+      "sending": "Sending message...",
+      "name": "Full name *",
+      "email": "Email *",
+      "phone": "Phone number (optional)",
+      "artworkType": "Artwork type *",
+      "size": "Preferred size *",
+      "budget": "Budget *",
+      "timeline": "Preferred timeline *",
+      "description": "Project description *",
+      "descriptionPlaceholder": "Tell me about your vision... What inspires you? Which emotions or themes would you like to explore? Are there specific colors, motifs, or existing works of mine that resonate with you?",
+      "consent": "* By submitting this form, you agree to be contacted regarding your artwork request.",
+      "emailIntro": "bithj.a.rts you received a new commission request.",
+      "emailSubjectPrefix": "Commission request: ",
+      "message": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "artworkType": "Artwork type",
+        "size": "Size",
+        "budget": "Budget",
+        "timeline": "Timeline",
+        "description": "Project description"
+      },
+      "options": {
+        "selectType": "Select type...",
+        "abstract": "Abstract",
+        "portrait": "Portrait",
+        "landscape": "Landscape",
+        "mixedMedia": "Mixed media",
+        "other": "Other",
+        "selectSize": "Select size...",
+        "small": "Small (up to 24\")",
+        "medium": "Medium (24\"-40\")",
+        "large": "Large (40\"-60\")",
+        "xlarge": "Extra large (60\"+)",
+        "selectBudget": "Select budget...",
+        "selectTimeline": "Select timeline...",
+        "flexible": "Flexible",
+        "weeks4to6": "4-6 weeks",
+        "weeks6to8": "6-8 weeks",
+        "months2to3": "2-3 months"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Can I see the artwork before it's finished?",
+        "answer": "Absolutely! You'll receive progress updates throughout the creation process. After the initial concept approval, I'll share photos at key stages so you can see your artwork coming to life."
+      },
+      {
+        "question": "What if I'm not satisfied with the result?",
+        "answer": "Your satisfaction is my priority. We'll work together through the concept and sketch phases to ensure we're aligned on the vision before I begin the final piece. Minor adjustments can be made during the creation process."
+      },
+      {
+        "question": "Do you ship internationally?",
+        "answer": "Yes! I carefully package and ship artwork worldwide. Shipping costs will be calculated based on your location and the artwork size, and discussed during our initial consultation."
+      },
+      {
+        "question": "Can I commission a piece similar to one I've seen?",
+        "answer": "Yes! My existing works can absolutely serve as inspiration. We'll discuss what elements you love and create something unique while maintaining those aesthetic qualities you admire."
+      }
+    ]
+  },
+  "email": {
+    "success": "Thanks. An email was sent :)",
+    "error": "Email failed:"
+  }
+}

@@ -1,4 +1,5 @@
 import emailjs from "emailjs-com";
+import i18n from "../i18n";
 
 export const sendEmail = (
   emailTemplate: string,
@@ -6,6 +7,6 @@ export const sendEmail = (
 ) => {
   emailjs
     .send("service_dgzs7qs", emailTemplate, templateParams)
-    .then(() => alert("Thanks. An email was sent :)"))
-    .catch((err) => console.log("Email failed:", err));
+    .then(() => alert(i18n.t("email.success")))
+    .catch((err) => console.log(i18n.t("email.error"), err));
 };

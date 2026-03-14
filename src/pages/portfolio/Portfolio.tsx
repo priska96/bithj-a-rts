@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { HeroSection } from "../../components/ui/HeroSection";
 import { Button } from "../../components/ui/Button";
@@ -11,6 +12,7 @@ const categories = [
 ];
 
 export const Portfolio = () => {
+  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
   const filteredPieces =
@@ -21,8 +23,8 @@ export const Portfolio = () => {
   return (
     <div className="min-h-screen pb-12 bg-main-bg">
       <HeroSection
-        title="My Portfolio"
-        subtitle="Explore my collection of artwork"
+        title={t("portfolio.heroTitle")}
+        subtitle={t("portfolio.heroSubtitle")}
       />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Category Filter */}
@@ -35,7 +37,7 @@ export const Portfolio = () => {
               variant={selectedCategory === category ? "chipActive" : "chip"}
               className="px-4 py-1.5 text-sm"
             >
-              {category}
+              {category === "All" ? t("portfolio.all") : category}
             </Button>
           ))}
         </div>

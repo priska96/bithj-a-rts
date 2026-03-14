@@ -1,17 +1,20 @@
 import { EmailIcon } from "../../components/icons/EmailIcon";
 import { LocationIcon } from "../../components/icons/LocationIcon";
 import { TimeIconSmall } from "../../components/icons/TimeIconSmall";
+import { useTranslation } from "react-i18next";
 import { Card } from "../../components/ui/Card";
 import { HeroSection } from "../../components/ui/HeroSection";
 import { Section } from "../../components/ui/Section";
 import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen -main-bg">
       <HeroSection
-        title="Get In Touch"
-        subtitle="I'd love to hear from you. Send me a message and I'll get back to you as soon as possible."
+        title={t("contact.heroTitle")}
+        subtitle={t("contact.heroSubtitle")}
       />
       <Section>
         <Card>
@@ -25,9 +28,11 @@ export const Contact = () => {
                   <EmailIcon />
                 </div>
                 <h3 className="mt-4 text-lg font-medium text-main-text">
-                  Email
+                  {t("common.email")}
                 </h3>
-                <p className="mt-2 text-main-text/70">your-email@example.com</p>
+                <p className="mt-2 text-main-text/70">
+                  {t("contact.emailValue")}
+                </p>
               </div>
 
               <div className="text-center">
@@ -35,9 +40,11 @@ export const Contact = () => {
                   <LocationIcon />
                 </div>
                 <h3 className="mt-4 text-lg font-medium text-main-text">
-                  Location
+                  {t("common.location")}
                 </h3>
-                <p className="mt-2 text-main-text/70">Your City, Country</p>
+                <p className="mt-2 text-main-text/70">
+                  {t("contact.locationValue")}
+                </p>
               </div>
 
               <div className="text-center">
@@ -45,9 +52,11 @@ export const Contact = () => {
                   <TimeIconSmall />
                 </div>
                 <h3 className="mt-4 text-lg font-medium text-main-text">
-                  Response Time
+                  {t("common.responseTime")}
                 </h3>
-                <p className="mt-2 text-main-text/70">Within 24-48 hours</p>
+                <p className="mt-2 text-main-text/70">
+                  {t("contact.responseValue")}
+                </p>
               </div>
             </div>
           </div>
