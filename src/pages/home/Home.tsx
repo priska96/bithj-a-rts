@@ -52,64 +52,67 @@ export const Home = () => {
       >
         {/* Featured Artwork Items - Alternating Layout */}
         <div className="space-y-24">
-          {artPieces.slice(0, 3).map((artwork, index) => (
-            <Link
-              key={artwork.id}
-              to={`/artwork/${artwork.id}`}
-              className="group block"
-            >
-              <div
-                className={`grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 items-center ${
-                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
+          {artPieces
+            .filter((artwork) => artwork.image)
+            .slice(0, 3)
+            .map((artwork, index) => (
+              <Link
+                key={artwork.id}
+                to={`/artwork/${artwork.id}`}
+                className="group block"
               >
-                {/* Image - Left on even, Right on odd */}
                 <div
-                  className={`${index % 2 === 1 ? "lg:order-2" : "lg:order-1"}`}
+                  className={`grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 items-center ${
+                    index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                  }`}
                 >
-                  <div className="relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 group-hover:shadow-3xl">
-                    <img
-                      src={artwork.image}
-                      alt={artwork.title}
-                      className="w-full h-auto aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                </div>
-
-                {/* Text - Right on even, Left on odd */}
-                <div
-                  className={`${index % 2 === 1 ? "lg:order-1" : "lg:order-2"}`}
-                >
-                  <Chip>
-                    {categoryLabel(artwork.category)} • {artwork.year}
-                  </Chip>
-                  <h3 className="text-3xl font-bold text-main-text sm:text-4xl mb-6 group-hover:text-primary transition-colors">
-                    {artwork.title}
-                  </h3>
-                  <p className="text-lg text-main-text/70 leading-relaxed mb-6">
-                    {artwork.summary}
-                  </p>
-                  <div className="inline-flex items-center text-lg font-medium text-primary group-hover:text-primary/200">
-                    {t("home.featured.viewDetails")}
-                    <svg
-                      className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  {/* Image - Left on even, Right on odd */}
+                  <div
+                    className={`${index % 2 === 1 ? "lg:order-2" : "lg:order-1"}`}
+                  >
+                    <div className="relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 group-hover:shadow-3xl">
+                      <img
+                        src={artwork.image}
+                        alt={artwork.title}
+                        className="w-full h-auto aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
                       />
-                    </svg>
+                      <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                  </div>
+
+                  {/* Text - Right on even, Left on odd */}
+                  <div
+                    className={`${index % 2 === 1 ? "lg:order-1" : "lg:order-2"}`}
+                  >
+                    <Chip>
+                      {categoryLabel(artwork.category)} • {artwork.year}
+                    </Chip>
+                    <h3 className="text-3xl font-bold text-main-text sm:text-4xl mb-6 group-hover:text-primary transition-colors">
+                      {artwork.title}
+                    </h3>
+                    <p className="text-lg text-main-text/70 leading-relaxed mb-6">
+                      {artwork.summary}
+                    </p>
+                    <div className="inline-flex items-center text-lg font-medium text-primary group-hover:text-primary/200">
+                      {t("home.featured.viewDetails")}
+                      <svg
+                        className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
         </div>
 
         <div className="mt-16 text-center">

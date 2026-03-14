@@ -9,7 +9,9 @@ import { ImageCard } from "../../components/ui/ImageCard";
 
 const categories: Array<ArtCategory | "All"> = [
   "All",
-  ...new Set(artPieces.map((piece) => piece.category)),
+  ...new Set(
+    artPieces.filter((artwork) => artwork.image).map((piece) => piece.category)
+  ),
 ];
 
 export const Portfolio = () => {
@@ -23,8 +25,10 @@ export const Portfolio = () => {
 
   const filteredPieces =
     selectedCategory === "All"
-      ? artPieces
-      : artPieces.filter((piece) => piece.category === selectedCategory);
+      ? artPieces.filter((artwork) => artwork.image)
+      : artPieces
+          .filter((artwork) => artwork.image)
+          .filter((piece) => piece.category === selectedCategory);
 
   return (
     <div className="min-h-screen pb-12 bg-main-bg">
