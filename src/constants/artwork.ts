@@ -15,7 +15,7 @@ export interface ArtPiece {
   id: number;
   title: string;
   category: ArtCategory;
-  image: string;
+  image?: string;
   description: string;
   materials: ArtMaterials;
   dimensions: string;
@@ -51,16 +51,14 @@ export const artPieces: ArtPiece[] = [
     title: "Kiwi",
     category: ArtCategory.StillLife,
     image: kiwi,
-    description:
-      "City life through an artistic lens, capturing the dynamic energy and architectural beauty of modern urban environments at golden hour.",
+    description: "",
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "60 x 80 cm (BxH)",
     medium: ArtMediums.Painting,
     price: "$1,800",
     availability: Availability.Available,
     year: "2012",
-    summary:
-      "City life through an artistic lens, capturing the dynamic energy and architectural beauty of modern urban environments at golden hour. The interplay of light and shadow creates a mesmerizing dance across the canvas, celebrating the rhythm of metropolitan life.",
+    summary: "",
   },
   {
     id: 3,
@@ -85,7 +83,8 @@ export const artPieces: ArtPiece[] = [
     category: ArtCategory.AllegoricalScene,
     image: freeIran,
     description:
-      "An allegorical composition exploring resistance, identity, and solidarity through layered symbolic forms.",
+      "„Free Iran“ trägt den Schmerz und die Sehnsucht eines Volkes, das nach Freiheit ruft. Es erinnert daran, dass politische Gewalt nicht nur Systeme betrifft, sondern Menschen – ihre Körper, ihre Stimmen und ihr Leben.Das Bild steht für Solidarität mit denen, die sich nach Veränderung sehnen, aber oft kaum gehört werden. Es ist ein stiller Ausdruck von Hoffnung, dass Freiheit eines Tages stärker sein wird als Angst.",
+    idea: "Die Idee hinter „Free Iran“ entstand aus dem Gefühl einer stillen Leere – als die Straßen ruhig blieben und der Protest kaum sichtbar war. Dieses Bild möchte das zeigen, was oft fehlt: Aufmerksamkeit, Solidarität und eine Stimme von außen. Es versteht sich als leiser Protest auf Leinwand, als Erinnerung daran, dass Freiheit nicht nur im Inneren eines Landes verteidigt wird. Wenn dort kaum protestiert werden kann – wer erhebt dann die Stimme?",
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "40 x 40 cm (BxH)",
     medium: ArtMediums.Painting,
@@ -99,7 +98,8 @@ export const artPieces: ArtPiece[] = [
     category: ArtCategory.Landscape,
     image: water,
     description:
-      "A landscape study focused on movement, reflection, and tonal shifts of water.",
+      "„Das Wasser dort oben“ zeigt eine klare Linie: den Horizont, der Wasser und Himmel voneinander trennt – so wie auch der Mensch von Gott getrennt erscheint. Und doch liegt im Hebräischen im Wort für Himmel (Schamaim) bereits das Wasser (Maim) verborgen, als würde sich beides trotz der Trennung heimlich ineinander spiegeln.Der Bilderrahmen steht für unser menschliches Bedürfnis, die Welt zu ordnen und zu begrenzen. Doch die göttliche Wirklichkeit fügt sich nicht vollständig in diesen Rahmen – sie reicht darüber hinaus, leise und unendlich.",
+    idea: "„Das Wasser dort oben“ entstand aus einer Beobachtung während meines Theologiestudiums: Im Hebräischen liegt im Wort für Himmel (Schamaim) bereits das Wort für Wasser (Maim). Im Bild trennt der Horizont klar Himmel und Wasser – eine von Gott gesetzte Ordnung, die auch die Distanz zwischen Gott und Mensch sichtbar macht. Und doch erinnert die Sprache daran, dass diese Welten nicht völlig voneinander gelöst sind. Der Bilderrahmen steht für unser menschliches Bedürfnis nach Ordnung – aber wie durchlässig ist diese Grenze eigentlich, wenn das Göttliche dennoch in unserer Welt wirkt?",
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "26 x 32 cm (BxH)",
     medium: ArtMediums.Painting,
@@ -109,11 +109,12 @@ export const artPieces: ArtPiece[] = [
   },
   {
     id: 6,
-    title: "Granatapfel",
+    title: "Reset & Reseed",
     category: ArtCategory.StillLife,
     image: pomegranate,
     description:
-      "A still-life piece centering form, surface texture, and color contrast around a pomegranate motif.",
+      "„Reset & Reseed“ ist ein Gedanke über Neubeginn. Manchmal braucht eine Gesellschaft einen Moment des Innehaltens – einen Reset –, um sich daran zu erinnern, was einmal ihre Wurzeln waren. Die iranische Kultur trägt eine lange Geschichte von Vielfalt, Schönheit und Stärke in sich. Wie ein Samen liegt diese Erinnerung noch immer im Boden der Zeit. Die Hoffnung dieses Bildes ist einfach: dass das, was unterdrückt wurde, eines Tages wieder wachsen kann – freier, sichtbarer und tiefer verwurzelt als zuvor.",
+    idea: "Die Idee zu dem Bild ist ein politisches Statement, als stiller Aufruf zum Neuanfang. Es zeigt den Granatapfel – die nationale Frucht des Iran – als Symbol für Ursprung und Erinnerung. Muss nicht manchmal alles auf „Reset“ gesetzt werden, damit das Eigentliche wieder wachsen kann? Wie Samen im Inneren der Frucht trägt auch die iranische Kultur die Möglichkeit in sich, neu gepflanzt zu werden – frei, lebendig und ohne Unterdrückung von Frauen.",
     materials: ArtMaterials.AcrylicOnCardboard,
     dimensions: "24 x 29 cm (BxH)",
     medium: ArtMediums.Painting,
@@ -125,9 +126,10 @@ export const artPieces: ArtPiece[] = [
     id: 7,
     title: "Bumble in Berlin",
     category: ArtCategory.AbstractCollage,
-    image: "https://images.unsplash.com/photo-1578301978018-3005759f48f7?w=800",
+    image: undefined,
     description:
-      "A collage-oriented abstract work combining fragmented shapes and contrasting rhythms.",
+      "„Bumble in Berlin“ erzählt von Begegnungen im schnellen Rhythmus der Großstadt. Zwischen Hoffnung, Neugier und dem Gefühl von Verliebtheit finden sich Hände für einen Moment – doch die Augen bleiben offen, immer auf der Suche nach der nächsten Möglichkeit. In dieser Dynamik entsteht eine Nähe, die intensiv und schön wirken kann, aber oft nur für kurze Zeit besteht. Was bleibt, sind flüchtige Bekanntschaften und Erinnerungen an Momente, die genauso schnell verschwinden, wie sie entstanden sind.",
+    idea: "Die Idee zu diesem Bild entstand aus meinem eigenen „failed dating summer“ – ein Sommer voller Hoffnung, erster Verliebtheit, widersprüchlicher Signale und plötzlichem Verschwinden. Begegnungen, die sich für einen Moment bedeutend anfühlten und doch so flüchtig blieben wie ein Wischen über den Bildschirm. Diese fragile Dynamik – zwischen Nähe und Distanz, zwischen Versprechen und Schweigen – stellt eine stille Frage: Wenn uns heute unendlich viele Möglichkeiten offenstehen, verlieren wir dann vielleicht genau das, wonach wir eigentlich suchen?",
     materials: ArtMaterials.MixedMediaOnCanvas,
     dimensions: "33 x 36 cm (BxH)",
     medium: ArtMediums.MixedMedia,
@@ -139,9 +141,8 @@ export const artPieces: ArtPiece[] = [
     id: 8,
     title: "Maher",
     category: ArtCategory.AbstractCollage,
-    image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800",
-    description:
-      "A compact collage study that emphasizes layered structure and expressive mark-making.",
+    image: undefined,
+    description: "",
     materials: ArtMaterials.AcrylicOnCardboard,
     dimensions: "16.5 x 25 cm (BxH)",
     medium: ArtMediums.MixedMedia,
@@ -153,9 +154,8 @@ export const artPieces: ArtPiece[] = [
     id: 9,
     title: "Maher Mama",
     category: ArtCategory.AbstractCollage,
-    image: "https://images.unsplash.com/photo-1579762593175-20226054cad0?w=800",
-    description:
-      "A collage work balancing layered forms with expressive color and texture.",
+    image: undefined,
+    description: "",
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "40 x 40 cm (BxH)",
     medium: ArtMediums.Painting,
@@ -167,7 +167,7 @@ export const artPieces: ArtPiece[] = [
     id: 10,
     title: "Bike",
     category: ArtCategory.Comic,
-    image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800",
+    image: undefined,
     description:
       "A comic-inspired composition focused on dynamic line work and motion.",
     materials: ArtMaterials.AcrylicOnCardboard,
@@ -181,9 +181,8 @@ export const artPieces: ArtPiece[] = [
     id: 11,
     title: "Lou",
     category: ArtCategory.Portrait,
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800",
-    description:
-      "A portrait study centered on expression, proportion, and tonal contrast.",
+    image: undefined,
+    description: "",
     materials: ArtMaterials.WatercolorOnCardboard,
     dimensions: "29.7 x 42 cm (BxH)",
     medium: ArtMediums.Watercolor,
@@ -225,9 +224,8 @@ export const artPieces: ArtPiece[] = [
     id: 14,
     title: "Hildi",
     category: ArtCategory.Portrait,
-    image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800",
-    description:
-      "A portrait in watercolor with soft layering and balanced contrast.",
+    image: undefined,
+    description: "",
     materials: ArtMaterials.WatercolorOnCardboard,
     dimensions: "29.7 x 42 cm (BxH)",
     medium: ArtMediums.Painting,
@@ -239,26 +237,11 @@ export const artPieces: ArtPiece[] = [
     id: 15,
     title: "Alucard",
     category: ArtCategory.Comic,
-    image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800",
-    description:
-      "A comic-style drawing built around line rhythm and character attitude.",
+    image: undefined,
+    description: "",
     materials: ArtMaterials.PencilOnCardboard,
     dimensions: "19 x 23 cm (BxH)",
     medium: ArtMediums.Drawing,
-    price: "On request",
-    availability: Availability.Available,
-    year: "2026",
-  },
-  {
-    id: 16,
-    title: "Reset & Reseed",
-    category: ArtCategory.StillLife,
-    image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800",
-    description:
-      "A still life painting capturing the essence of natural forms and textures.",
-    materials: ArtMaterials.AcrylicOnCardboard,
-    dimensions: "19 x 23 cm (BxH)",
-    medium: ArtMediums.Painting,
     price: "On request",
     availability: Availability.Available,
     year: "2026",
