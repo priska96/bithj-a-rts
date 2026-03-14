@@ -9,38 +9,32 @@ import { artPieces } from "../constants/artwork";
 export const Home = () => (
   <div className="min-h-screen">
     {/* Hero Section */}
-    <section className="relative bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[600px] lg:min-h-[700px]">
-        {/* Left Half - Text Content */}
-        <div className="flex items-center justify-center px-6 py-20 sm:px-8 lg:px-12">
-          <div className="max-w-xl">
-            <h1 className="text-5xl font-bold tracking-tight text-main-text sm:text-6xl lg:text-7xl">
-              <span className="block">Visual Artist &</span>
-              <span className="text-primary">Creative Soul</span>
-            </h1>
-            <p className="mt-6 text-xl text-main-text/70 lg:text-2xl">
-              Transforming emotions and experiences into captivating visual
-              stories
-            </p>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Button to={RoutePaths.PORTFOLIO} variant="solidPrimary">
-                Explore My Work
-              </Button>
-              <Button to={RoutePaths.CONTACT} variant="outlinePrimary">
-                Let's Collaborate
-              </Button>
-            </div>
-          </div>
-        </div>
+    <section className="relative overflow-hidden bg-white min-h-[600px] lg:min-h-[700px]">
+      <img
+        src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1600"
+        alt="Artist hero image"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/20" />
 
-        {/* Right Half - Hero Image */}
-        <div className="relative h-[400px] lg:h-full">
-          <img
-            src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1200"
-            alt="Artist hero image"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-white/0"></div>
+      <div className="relative z-10 mx-auto flex min-h-[600px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:min-h-[700px] lg:px-12">
+        <div className="max-w-xl text-white">
+          <h1 className="text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
+            <span className="block">Visual Artist &</span>
+            <span className="text-primary">Creative Soul</span>
+          </h1>
+          <p className="mt-6 text-xl text-white/80 lg:text-2xl">
+            Transforming emotions and experiences into captivating visual
+            stories
+          </p>
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <Button to={RoutePaths.PORTFOLIO} variant="solidPrimary">
+              Explore My Work
+            </Button>
+            <Button to={RoutePaths.CONTACT} variant="outlinePrimary">
+              Let's Collaborate
+            </Button>
+          </div>
         </div>
       </div>
     </section>
