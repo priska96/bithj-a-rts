@@ -1,15 +1,19 @@
+import kiwi from "../assets/kiwi.jpeg";
+import hands from "../assets/hands.jpeg";
+import type { ArtCategoryKey } from "./artCategory";
+import type { AvailabilityKey } from "./availability";
+
 export interface ArtPiece {
   id: number;
   title: string;
-  category: string;
+  category: ArtCategoryKey;
   image: string;
   description: string;
-  creationDate: string;
   materials: string;
   dimensions: string;
   medium: string;
   price: string;
-  availability: string;
+  availability: AvailabilityKey;
   series: string;
   year: string;
   summary?: string;
@@ -18,17 +22,16 @@ export interface ArtPiece {
 export const artPieces: ArtPiece[] = [
   {
     id: 1,
-    title: "Abstract Dreams",
-    category: "Abstract",
-    image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800",
+    title: "Don't Let Go",
+    category: "figureDrawing",
+    image: hands,
     description:
       "An exploration of color and form that delves into the subconscious mind, bringing dreams and imagination to life through bold brushstrokes and vibrant hues.",
-    creationDate: "March 15, 2025",
     materials: "Acrylic on canvas",
-    dimensions: '36" × 48" (91.4 × 121.9 cm)',
+    dimensions: "21 x 29,7 cm (BxH)",
     medium: "Painting",
     price: "$2,500",
-    availability: "Available",
+    availability: "available",
     series: "Dream Series",
     year: "2025",
     summary:
@@ -36,17 +39,16 @@ export const artPieces: ArtPiece[] = [
   },
   {
     id: 2,
-    title: "Urban Landscape",
-    category: "Landscape",
-    image: "https://images.unsplash.com/photo-1549887534-1541e9326642?w=800",
+    title: "Kiwi",
+    category: "stillLife",
+    image: kiwi,
     description:
       "City life through an artistic lens, capturing the dynamic energy and architectural beauty of modern urban environments at golden hour.",
-    creationDate: "January 8, 2025",
     materials: "Oil on canvas",
-    dimensions: '24" × 36" (61 × 91.4 cm)',
+    dimensions: "60 x 80 cm (BxH)",
     medium: "Painting",
     price: "$1,800",
-    availability: "Available",
+    availability: "available",
     series: "Urban Collection",
     year: "2025",
     summary:
@@ -55,16 +57,15 @@ export const artPieces: ArtPiece[] = [
   {
     id: 3,
     title: "Portrait Series #1",
-    category: "Portrait",
+    category: "portrait",
     image: "https://images.unsplash.com/photo-1578926314433-e2789279f4aa?w=800",
     description:
       "Contemporary portrait work that explores identity and emotion through expressive use of color and texture, creating a dialogue between subject and viewer.",
-    creationDate: "November 22, 2024",
     materials: "Mixed media on canvas",
     dimensions: '30" × 40" (76.2 × 101.6 cm)',
     medium: "Mixed Media",
     price: "$2,200",
-    availability: "Sold",
+    availability: "sold",
     series: "Portrait Series",
     year: "2024",
     summary:
@@ -73,16 +74,15 @@ export const artPieces: ArtPiece[] = [
   {
     id: 4,
     title: "Nature's Palette",
-    category: "Nature",
+    category: "nature",
     image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800",
     description:
       "Inspired by natural beauty, this piece celebrates the organic forms and colors found in the wilderness, inviting viewers to reconnect with nature.",
-    creationDate: "September 5, 2024",
     materials: "Watercolor and ink on paper",
     dimensions: '18" × 24" (45.7 × 61 cm)',
     medium: "Watercolor",
     price: "$950",
-    availability: "Available",
+    availability: "available",
     series: "Nature Studies",
     year: "2024",
     summary:
@@ -91,16 +91,15 @@ export const artPieces: ArtPiece[] = [
   {
     id: 5,
     title: "Geometric Harmony",
-    category: "Abstract",
+    category: "abstract",
     image: "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=800",
     description:
       "Balance through geometry, exploring mathematical precision and organic flow in a harmonious composition of shapes and colors.",
-    creationDate: "July 12, 2024",
     materials: "Acrylic and gold leaf on panel",
     dimensions: '20" × 20" (50.8 × 50.8 cm)',
     medium: "Painting",
     price: "$1,500",
-    availability: "Available",
+    availability: "available",
     series: "Geometric Series",
     year: "2024",
     summary:
@@ -109,16 +108,15 @@ export const artPieces: ArtPiece[] = [
   {
     id: 6,
     title: "Sunset Dreams",
-    category: "Landscape",
+    category: "landscape",
     image: "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=800",
     description:
       "Capturing the golden hour with rich, warm tones that evoke the peaceful transition from day to night.",
-    creationDate: "May 18, 2024",
     materials: "Oil on linen",
     dimensions: '30" × 48" (76.2 × 121.9 cm)',
     medium: "Painting",
     price: "$2,800",
-    availability: "Available",
+    availability: "available",
     series: "Horizons",
     year: "2024",
     summary:

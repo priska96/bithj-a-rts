@@ -20,6 +20,21 @@
     "commissions": "Auftragsarbeiten",
     "contact": "Kontakt"
   },
+  "categories": {
+    "figureDrawing": "Akt / Figurenzeichnung",
+    "allegoricalScene": "Allegorische Szene",
+    "abstractCollage": "Abstrakt / Collage",
+    "comic": "Comic",
+    "landscape": "Landschaft",
+    "stillLife": "Stillleben",
+    "portrait": "Porträt",
+    "nature": "Natur",
+    "abstract": "Abstrakt"
+  },
+  "availability": {
+    "sold": "Verkauft",
+    "available": "Verfügbar"
+  },
   "footer": {
     "rights": "© {{year}} bith.j.a.rts. Alle Rechte vorbehalten.",
     "faq": "FAQ",
@@ -128,7 +143,6 @@
     "backToPortfolio": "Zurück zum Portfolio",
     "details": {
       "year": "Jahr",
-      "creationDate": "Entstehungsdatum",
       "medium": "Medium",
       "materials": "Materialien",
       "dimensions": "Maße",

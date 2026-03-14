@@ -15,6 +15,9 @@ export const Portfolio = () => {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
+  const categoryLabel = (category: string) =>
+    t(`categories.${category}`, { defaultValue: category });
+
   const filteredPieces =
     selectedCategory === "All"
       ? artPieces
@@ -37,7 +40,9 @@ export const Portfolio = () => {
               variant={selectedCategory === category ? "chipActive" : "chip"}
               className="px-4 py-1.5 text-sm"
             >
-              {category === "All" ? t("portfolio.all") : category}
+              {category === "All"
+                ? t("portfolio.all")
+                : categoryLabel(category)}
             </Button>
           ))}
         </div>
@@ -54,7 +59,7 @@ export const Portfolio = () => {
                 src={piece.image}
                 alt={piece.title}
                 title={piece.title}
-                category={piece.category}
+                category={categoryLabel(piece.category)}
               />
             </Link>
           ))}

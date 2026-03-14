@@ -10,6 +10,9 @@ import { artPieces } from "../../constants/artwork";
 export const Home = () => {
   const { t } = useTranslation();
 
+  const categoryLabel = (category: string) =>
+    t(`categories.${category}`, { defaultValue: category });
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -79,7 +82,7 @@ export const Home = () => {
                   className={`${index % 2 === 1 ? "lg:order-1" : "lg:order-2"}`}
                 >
                   <Chip>
-                    {artwork.category} • {artwork.year}
+                    {categoryLabel(artwork.category)} • {artwork.year}
                   </Chip>
                   <h3 className="text-3xl font-bold text-main-text sm:text-4xl mb-6 group-hover:text-primary transition-colors">
                     {artwork.title}

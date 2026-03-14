@@ -22,9 +22,11 @@ export const ArtworkDetail = () => {
     return <NoArtworkFound />;
   }
 
+  const categoryLabel = (category: string) =>
+    t(`categories.${category}`, { defaultValue: category });
+
   const tableLabels = [
     { label: t("portfolio.details.year"), value: artwork.year },
-    { label: t("portfolio.details.creationDate"), value: artwork.creationDate },
     { label: t("portfolio.details.medium"), value: artwork.medium },
     { label: t("portfolio.details.materials"), value: artwork.materials },
     { label: t("portfolio.details.dimensions"), value: artwork.dimensions },
@@ -70,7 +72,7 @@ export const ArtworkDetail = () => {
           <div className="space-y-8">
             {/* Title and Category */}
             <div>
-              <Chip>{artwork.category}</Chip>
+              <Chip>{categoryLabel(artwork.category)}</Chip>
               <h1 className="text-4xl font-bold text-main-text sm:text-5xl">
                 {artwork.title}
               </h1>
@@ -97,14 +99,14 @@ export const ArtworkDetail = () => {
                       {item.isStatus ? (
                         <span
                           className={`inline-flex rounded-full px-3 py-1 text-sm font-medium ${
-                            item.value === "Available"
+                            item.value === "available"
                               ? "bg-green-100 text-green-800"
                               : "bg-red-100 text-red-800"
                           }`}
                         >
-                          {item.value === "Available"
-                            ? t("common.available")
-                            : t("common.sold")}
+                          {t(`availability.${item.value}`, {
+                            defaultValue: item.value,
+                          })}
                         </span>
                       ) : item.bold ? (
                         <span className="font-semibold">{item.value}</span>
@@ -123,7 +125,7 @@ export const ArtworkDetail = () => {
                 {t("portfolio.details.ctaTitle")}
               </h3>
               <p className="mt-2 text-main-text/70">
-                {artwork.availability === "Available"
+                {artwork.availability === "available"
                   ? t("portfolio.details.ctaAvailable")
                   : t("portfolio.details.ctaSold")}
               </p>

@@ -20,6 +20,21 @@
     "commissions": "Commissions",
     "contact": "Contact"
   },
+  "categories": {
+    "figureDrawing": "Act / Figure drawing",
+    "allegoricalScene": "Allegorical scene",
+    "abstractCollage": "Abstract / collage",
+    "comic": "Comic",
+    "landscape": "Landscape",
+    "stillLife": "Still life",
+    "portrait": "Portrait",
+    "nature": "Nature",
+    "abstract": "Abstract"
+  },
+  "availability": {
+    "sold": "Sold",
+    "available": "Available"
+  },
   "footer": {
     "rights": "© {{year}} bithj.a.rts. All rights reserved.",
     "faq": "FAQ",
@@ -128,7 +143,6 @@
     "backToPortfolio": "Back to portfolio",
     "details": {
       "year": "Year",
-      "creationDate": "Creation date",
       "medium": "Medium",
       "materials": "Materials",
       "dimensions": "Dimensions",
