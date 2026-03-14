@@ -18,7 +18,8 @@
     "portfolio": "Portfolio",
     "about": "Über mich",
     "commissions": "Auftragsarbeiten",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "shop": "Shop"
   },
   "categories": {
     "figureDrawing": "Akt / Figurenzeichnung",
@@ -169,7 +170,33 @@
       "ctaTitle": "Interessiert an diesem Werk?",
       "ctaAvailable": "Dieses Kunstwerk ist aktuell zum Kauf verfügbar. Kontaktiere mich, um den Erwerb zu besprechen oder ein ähnliches Werk in Auftrag zu geben.",
       "ctaSold": "Auch wenn dieses Werk bereits verkauft wurde, nehme ich Aufträge für ähnliche Arbeiten an. Melde dich gerne, um deine Idee zu besprechen.",
-      "shareTitle": "Dieses Kunstwerk teilen"
+      "shareTitle": "Dieses Kunstwerk teilen",
+      "buyButton": "Jetzt kaufen"
+    }
+  },
+  "shop": {
+    "heroTitle": "Shop",
+    "heroSubtitle": "Kaufe einen Kunstdruck oder frage das Originalkunstwerk an.",
+    "noArtworkSelected": "Noch kein Kunstwerk ausgewählt.",
+    "goToPortfolio": "Zum Portfolio",
+    "chooseTypeTitle": "Wähle deine Option",
+    "contactTitle": "Sende deine Kaufanfrage",
+    "form": {
+      "subjectPrefix": "Shop-Anfrage",
+      "artwork": "Kunstwerk",
+      "purchaseType": "Kaufart",
+      "messageHint": "Bitte teile gewünschte Größe, Lieferland und eventuelle Fragen mit."
+    },
+    "options": {
+      "print": {
+        "title": "Kunstdruck",
+        "description": "Bestelle einen hochwertigen Druck dieses Kunstwerks."
+      },
+      "original": {
+        "title": "Originalgemälde",
+        "description": "Frage den Kauf des Originalwerks an.",
+        "unavailable": "Dieses Original ist verkauft. Du kannst weiterhin einen Druck bestellen."
+      }
     }
   },
   "commissions": {

@@ -141,10 +141,10 @@ export const ArtworkDetail = () => {
                   : t("portfolio.details.ctaSold")}
               </p>
               <Link
-                to={RoutePaths.CONTACT}
+                to={`${RoutePaths.SHOP}?artworkId=${artwork.id}`}
                 className="mt-4 inline-block rounded-md bg-primary px-6 py-3 text-white transition-colors hover:bg-primary/80"
               >
-                {t("common.contactMe")}
+                {t("portfolio.details.buyButton")}
               </Link>
             </div>
 

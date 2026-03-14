@@ -16,6 +16,7 @@ export const Layout = ({ children }: PropsWithChildren) => {
     { to: RoutePaths.PORTFOLIO, label: t("nav.portfolio") },
     { to: RoutePaths.ABOUT, label: t("nav.about") },
     { to: RoutePaths.COMMISSIONS, label: t("nav.commissions") },
+    { to: RoutePaths.SHOP, label: t("nav.shop") },
     { to: RoutePaths.CONTACT, label: t("nav.contact") },
   ];
 

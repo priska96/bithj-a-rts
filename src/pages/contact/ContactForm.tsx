@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState, ChangeEvent, FormEvent, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "../../components/ui/Button";
 import { InputField } from "../../components/ui/InputField";
@@ -13,15 +13,42 @@ interface FormData {
   message: string;
 }
 
-export const ContactForm = () => {
+interface ContactFormProps {
+  initialSubject?: string;
+  initialMessage?: string;
+}
+
+export const ContactForm = ({
+  initialSubject = "",
+  initialMessage = "",
+}: ContactFormProps) => {
   const { t } = useTranslation();
+  const previousInitialSubject = useRef(initialSubject);
+  const previousInitialMessage = useRef(initialMessage);
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
-    subject: "",
-    message: "",
+    subject: initialSubject,
+    message: initialMessage,
   });
   const [status, setStatus] = useState(t("contact.form.submit"));
+
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      subject:
+        prev.subject === previousInitialSubject.current
+          ? initialSubject
+          : prev.subject,
+      message:
+        prev.message === previousInitialMessage.current
+          ? initialMessage
+          : prev.message,
+    }));
+
+    previousInitialSubject.current = initialSubject;
+    previousInitialMessage.current = initialMessage;
+  }, [initialSubject, initialMessage]);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

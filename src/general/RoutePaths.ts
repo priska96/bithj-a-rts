@@ -1,6 +1,7 @@
 export const RoutePaths = {
   HOME: "/",
   PORTFOLIO: "/portfolio",
+  SHOP: "/shop",
   ABOUT: "/about",
   COMMISSIONS: "/commissions",
   CONTACT: "/contact",

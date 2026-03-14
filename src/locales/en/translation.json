@@ -18,7 +18,8 @@
     "portfolio": "Portfolio",
     "about": "About",
     "commissions": "Commissions",
-    "contact": "Contact"
+    "contact": "Contact",
+    "shop": "Shop"
   },
   "categories": {
     "figureDrawing": "Act / Figure drawing",
@@ -169,7 +170,33 @@
       "ctaTitle": "Interested in this piece?",
       "ctaAvailable": "This artwork is currently available for purchase. Contact me to discuss acquisition or commission similar work.",
       "ctaSold": "While this piece has been sold, I accept commissions for similar work. Get in touch to discuss your vision.",
-      "shareTitle": "Share this artwork"
+      "shareTitle": "Share this artwork",
+      "buyButton": "Buy now"
+    }
+  },
+  "shop": {
+    "heroTitle": "Shop",
+    "heroSubtitle": "Buy a fine art print or request the original artwork.",
+    "noArtworkSelected": "No artwork selected yet.",
+    "goToPortfolio": "Go to portfolio",
+    "chooseTypeTitle": "Choose your option",
+    "contactTitle": "Send your purchase request",
+    "form": {
+      "subjectPrefix": "Shop request",
+      "artwork": "Artwork",
+      "purchaseType": "Purchase type",
+      "messageHint": "Please share your preferred size, shipping country, and any questions."
+    },
+    "options": {
+      "print": {
+        "title": "Kunstdruck (Print)",
+        "description": "Order a high-quality print of this artwork."
+      },
+      "original": {
+        "title": "Original painting",
+        "description": "Request to purchase the original piece.",
+        "unavailable": "This original is sold. You can still order a print."
+      }
     }
   },
   "commissions": {

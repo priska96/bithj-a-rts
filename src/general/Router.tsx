@@ -7,6 +7,7 @@ import { About } from "../pages/about/About";
 import { Commissions } from "../pages/commissions/Commissions";
 import { Contact } from "../pages/contact/Contact";
 import { FAQ } from "../pages/faq/FAQ";
+import { Shop } from "../pages/shop/Shop";
 import { NotFound } from "./NotFound";
 import { Layout } from "./Layout";
 import { RoutePaths } from "./RoutePaths";
@@ -50,6 +51,14 @@ export const Router = () => (
       element={
         <Layout>
           <Commissions />
+        </Layout>
+      }
+    />
+    <Route
+      path={RoutePaths.SHOP}
+      element={
+        <Layout>
+          <Shop />
         </Layout>
       }
     />

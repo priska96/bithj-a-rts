@@ -1,5 +1,12 @@
 import kiwi from "../assets/kiwi.jpeg";
 import hands from "../assets/hands.jpeg";
+import looksmaxxing from "../assets/looksmaxxing.jpeg";
+import skinBeforeSin from "../assets/skinBeforeSin.jpeg";
+import water from "../assets/water.jpeg";
+import walache from "../assets/walache.jpeg";
+import freeIran from "../assets/freeIran.jpeg";
+import bumbleInBerlin from "../assets/bumbleInBerlin.jpeg";
+import pomegranate from "../assets/pomegranate.jpeg";
 import { ArtCategory } from "./artCategory";
 import { Availability } from "./availability";
 import { ArtMaterials, ArtMediums } from "./artMaterials";
@@ -28,7 +35,8 @@ export const artPieces: ArtPiece[] = [
     category: ArtCategory.FigureDrawing,
     image: hands,
     description:
-      "An exploration of color and form that delves into the subconscious mind, bringing dreams and imagination to life through bold brushstrokes and vibrant hues.",
+      "Zwei ineinander greifende Hände halten sich in einem Moment, der zugleich zart und intensiv ist. In dieser Berührung verdichten sich, durch weiche fließende Linien Verliebtheit, Leidenschaft und das Gefühl, für einen Augenblick vollkommen beim anderen angekommen zu sein. Diese Verbindung ist fast instinktiv – als wollten sie ein Gefühl festhalten, das sich kaum in Worte fassen lässt. Es ist der kurze, kostbare Augenblick eines Höhepunkts, der Nähe, in dem zwei Menschen einander so festhalten, als könnten sie damit die Zeit selbst anhalten.",
+    idea: "Die Idee zu diesem Bild entstand aus der Beobachtung der heutigen Dating-Kultur, die oft schnelllebig und oberflächlich wirkt – geprägt von Situationships, Unsicherheit und Ghosting. Dabei fragte ich mich, ob die tiefe Form von Intimität, in der man sich wirklich aufeinander einlässt und vollkommen fallen lassen kann, immer seltener wird. Die ineinander greifenden Hände stehen deshalb für einen Moment echter Vertrautheit und Geborgenheit – für die Sehnsucht nach einer Nähe, die in unserer Zeit oft verloren zu gehen scheint.",
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "21 x 29,7 cm (BxH)",
     medium: ArtMediums.Drawing,
@@ -56,11 +64,12 @@ export const artPieces: ArtPiece[] = [
   },
   {
     id: 3,
-    title: "Nackte Frau",
+    title: "Skin before Sin – Als Nacktheit noch kein Urteil war",
     category: ArtCategory.FigureDrawing,
-    image: "https://images.unsplash.com/photo-1578926314433-e2789279f4aa?w=800",
+    image: skinBeforeSin,
     description:
-      "Contemporary portrait work that explores identity and emotion through expressive use of color and texture, creating a dialogue between subject and viewer.",
+      "In „Skin before Sin – Als Nacktheit noch kein Urteil war“ erscheint der weibliche Körper nicht als Objekt, sondern als ursprüngliche Präsenz – eine Erinnerung an eine Zeit vor dem Urteil, bevor Scham, Moral und gesellschaftliche Blicke den Körper mit Bedeutung überluden. Der Rücken bleibt dem Betrachter zugewandt und entzieht sich bewusst dem Anspruch, bewertet zu werden. Die fließenden Grün-, Blau- und Lichttöne umgeben die Figur wie ein stiller, fast paradiesischer Raum – ein Moment, in dem Haut noch einfach Haut war: frei, verletzlich und menschlich.",
+    idea: "Die Idee hinter diesem Bild entspringt der alten Erzählung von Eva, mit der bis heute oft sofort Schuld verbunden wird. Seit Jahrhunderten trägt die Frau in vielen religiösen Deutungen das Bild der Sünderin – ein Urteil, das sich tief in unser Denken eingeschrieben hat. Dieses Bild versucht, einen Moment davor sichtbar zu machen: einen Zustand, in dem Haut noch nicht Schuld war und Weiblichkeit noch kein Urteil tragen musste.",
     materials: ArtMaterials.MixedMediaOnCanvas,
     dimensions: '30 × 40 cm (BxH)"',
     medium: ArtMediums.MixedMedia,
@@ -74,7 +83,7 @@ export const artPieces: ArtPiece[] = [
     id: 4,
     title: "Free Iran",
     category: ArtCategory.AllegoricalScene,
-    image: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=800",
+    image: freeIran,
     description:
       "An allegorical composition exploring resistance, identity, and solidarity through layered symbolic forms.",
     materials: ArtMaterials.AcrylicOnCanvas,
@@ -88,7 +97,7 @@ export const artPieces: ArtPiece[] = [
     id: 5,
     title: "Das Wasser dort oben",
     category: ArtCategory.Landscape,
-    image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800",
+    image: water,
     description:
       "A landscape study focused on movement, reflection, and tonal shifts of water.",
     materials: ArtMaterials.AcrylicOnCanvas,
@@ -102,7 +111,7 @@ export const artPieces: ArtPiece[] = [
     id: 6,
     title: "Granatapfel",
     category: ArtCategory.StillLife,
-    image: "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=800",
+    image: pomegranate,
     description:
       "A still-life piece centering form, surface texture, and color contrast around a pomegranate motif.",
     materials: ArtMaterials.AcrylicOnCardboard,
@@ -184,11 +193,12 @@ export const artPieces: ArtPiece[] = [
   },
   {
     id: 12,
-    title: "Walache",
+    title: "Der Walache",
     category: ArtCategory.Portrait,
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800",
+    image: walache,
     description:
-      "A portrait study emphasizing facial structure and tonal depth.",
+      "Der Walache erscheint hier als stille Erinnerung an eine Kultur, die langsam aus dem kollektiven Gedächtnis verschwindet. In seiner Haltung, seiner Kleidung und den kräftigen Farben liegt ein Echo von Geschichte, Tradition und Identität. Das Bild fragt zugleich, wie wir heute mit kulturellem Erbe umgehen – was wir erinnern, was wir bewahren und was im Lärm der Gegenwart unbemerkt verloren geht.",
+    idea: "Die Idee zu diesem Bild entstand durch einen sehr guten Freund von mir, der selbst Walache ist. Immer wieder erlebe ich, wie er erklären muss, wer die Walachen sind – als würde eine ganze Kultur erst wieder sichtbar werden müssen, sobald jemand beginnt, von ihr zu erzählen. Dieses Bild ist deshalb auch ein Versuch, Aufmerksamkeit zu schenken: einer Geschichte, einer Identität und einem kulturellen Erbe, das nicht klein ist – sondern nur zu selten gesehen wird.",
     materials: ArtMaterials.AcrylicOnCardboard,
     dimensions: "29.7 x 42 cm (BxH)",
     medium: ArtMediums.Painting,
@@ -200,7 +210,7 @@ export const artPieces: ArtPiece[] = [
     id: 13,
     title: "LooksMaxxing",
     category: ArtCategory.Portrait,
-    image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800",
+    image: looksmaxxing,
     description:
       "Ein halb gezeichnetes Gesicht zwischen Licht und Schatten spiegelt den modernen Wunsch nach perfekter Schönheit – und erinnert zugleich daran, dass ein Teil unserer Identität immer verborgen bleibt. Hinter der Jagd nach dem perfekten Gesicht wächst eine stille Leere – als würde jeder Strich der Optimierung etwas Menschliches ausradieren. Je makelloser die Oberfläche wird, desto lauter fragt die Seele, wo sie in diesem Bild noch Platz hat.",
     idea: "Die Idee zu diesem Bild entstand, als ich immer mehr Zeit auf Social Media verbrachte und dort unzählige Filter, Schönheitsideale und den Trend des „Looksmaxxing“ sah. Dabei fragte ich mich, was passiert, wenn die ständige Optimierung des Äußeren immer wichtiger wird – und was dabei vielleicht vom eigentlichen Menschen verloren geht.",
@@ -235,6 +245,20 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.PencilOnCardboard,
     dimensions: "19 x 23 cm (BxH)",
     medium: ArtMediums.Drawing,
+    price: "On request",
+    availability: Availability.Available,
+    year: "2026",
+  },
+  {
+    id: 16,
+    title: "Reset & Reseed",
+    category: ArtCategory.StillLife,
+    image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800",
+    description:
+      "A still life painting capturing the essence of natural forms and textures.",
+    materials: ArtMaterials.AcrylicOnCardboard,
+    dimensions: "19 x 23 cm (BxH)",
+    medium: ArtMediums.Painting,
     price: "On request",
     availability: Availability.Available,
     year: "2026",
