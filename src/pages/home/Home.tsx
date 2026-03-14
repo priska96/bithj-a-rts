@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { RoutePaths } from "../general/RoutePaths";
-import { Button } from "../components/ui/Button";
-import { Chip } from "../components/ui/Chip";
-import { CTASection } from "../components/ui/CTASection";
-import { Section } from "../components/ui/Section";
-import { artPieces } from "../constants/artwork";
+import { RoutePaths } from "../../general/RoutePaths";
+import { Button } from "../../components/ui/Button";
+import { Chip } from "../../components/ui/Chip";
+import { CTASection } from "../../components/ui/CTASection";
+import { Section } from "../../components/ui/Section";
+import { artPieces } from "../../constants/artwork";
 
 export const Home = () => (
   <div className="min-h-screen">

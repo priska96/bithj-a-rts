@@ -1,9 +1,9 @@
-import { EmailIcon } from "../components/icons/EmailIcon";
-import { LocationIcon } from "../components/icons/LocationIcon";
-import { TimeIconSmall } from "../components/icons/TimeIconSmall";
-import { Card } from "../components/ui/Card";
-import { HeroSection } from "../components/ui/HeroSection";
-import { Section } from "../components/ui/Section";
+import { EmailIcon } from "../../components/icons/EmailIcon";
+import { LocationIcon } from "../../components/icons/LocationIcon";
+import { TimeIconSmall } from "../../components/icons/TimeIconSmall";
+import { Card } from "../../components/ui/Card";
+import { HeroSection } from "../../components/ui/HeroSection";
+import { Section } from "../../components/ui/Section";
 import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {

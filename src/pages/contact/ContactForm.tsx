@@ -1,7 +1,9 @@
 import { useState, ChangeEvent, FormEvent } from "react";
-import { Button } from "../components/ui/Button";
-import { InputField } from "../components/ui/InputField";
-import { TextArea } from "../components/ui/TextArea";
+import { Button } from "../../components/ui/Button";
+import { InputField } from "../../components/ui/InputField";
+import { TextArea } from "../../components/ui/TextArea";
+import { sendEmail } from "../../utils/sendEmail";
+import { CONTACT_TEMPLATE_ID } from "../../constants/emailJs";
 
 interface FormData {
   name: string;
@@ -10,20 +12,14 @@ interface FormData {
   message: string;
 }
 
-export interface ContactFormProps {
-  mailto?: string;
-}
-
-export const ContactForm = ({
-  mailto = "your-email@example.com",
-}: ContactFormProps) => {
+export const ContactForm = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("Abschicken");
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -36,17 +32,17 @@ export const ContactForm = ({
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setStatus("Versende Nachricht...");
+    sendEmail(CONTACT_TEMPLATE_ID, {
+      ...formData,
+      intro: "bithja.arts du hast eine neue Kontaktanfrage erhalten.",
+      subject: "Allgemeine Kontaktanfrage:" + formData.subject,
+      time: new Date().toISOString(),
+    });
 
-    const mailtoLink = `mailto:${mailto}?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`;
-
-    window.location.href = mailtoLink;
-
-    setStatus("Opening your email client...");
     setTimeout(() => {
       setFormData({ name: "", email: "", subject: "", message: "" });
-      setStatus("");
+      setStatus("Abschicken");
     }, 2000);
   };
 
@@ -71,7 +67,7 @@ export const ContactForm = ({
       </div>
 
       <InputField
-        label="Subject *"
+        label="Betreff *"
         value={formData.subject}
         onChange={handleChange}
         name="subject"
@@ -79,12 +75,12 @@ export const ContactForm = ({
       />
 
       <TextArea
-        label="Message *"
+        label="Nachricht *"
         value={formData.message}
         onChange={handleChange}
         name="message"
         required
-        placeholder="Ask me anything you want..."
+        placeholder="Stelle mir jede Frage, die du möchtest..."
       />
 
       <div>
@@ -93,11 +89,9 @@ export const ContactForm = ({
           variant="solidPrimary"
           className="w-full rounded-md"
         >
-          Send Message
+          {status}
         </Button>
       </div>
-
-      {status && <p className="text-center text-sm text-green-600">{status}</p>}
     </form>
   );
 };

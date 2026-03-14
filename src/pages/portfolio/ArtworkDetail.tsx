@@ -1,12 +1,12 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Button } from "../components/ui/Button";
-import { Chip } from "../components/ui/Chip";
-import { Image } from "../components/ui/Image";
-import { artPieces } from "../constants/artwork";
-import { RoutePaths } from "../general/RoutePaths";
+import { Button } from "../../components/ui/Button";
+import { Chip } from "../../components/ui/Chip";
+import { Image } from "../../components/ui/Image";
+import { artPieces } from "../../constants/artwork";
+import { RoutePaths } from "../../general/RoutePaths";
 import { NoArtworkFound } from "./NoArtworkFound";
-import { ShareIcon } from "../components/icons/ShareIcon";
-import { Card } from "../components/ui/Card";
+import { ShareIcon } from "../../components/icons/ShareIcon";
+import { Card } from "../../components/ui/Card";
 
 export type Artwork = (typeof artPieces)[number];
 

@@ -1,3 +1,4 @@
+import emailjs from "emailjs-com";
 import { Suspense, PropsWithChildren } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Router } from "./general/Router";
@@ -7,18 +8,21 @@ export const PageWithHeader = ({ children }: PropsWithChildren) => (
   <div className="flex h-full flex-col">{children}</div>
 );
 
-export const App = () => (
-  <BrowserRouter>
-    <Suspense
-      fallback={
-        <PageWithHeader>
-          <Loading name="suspense" />
-        </PageWithHeader>
-      }
-    >
-      <div className="h-full">
-        <Router />
-      </div>
-    </Suspense>
-  </BrowserRouter>
-);
+export const App = () => {
+  emailjs.init("wTAo3NNd0S5v1dizn");
+  return (
+    <BrowserRouter>
+      <Suspense
+        fallback={
+          <PageWithHeader>
+            <Loading name="suspense" />
+          </PageWithHeader>
+        }
+      >
+        <div className="h-full">
+          <Router />
+        </div>
+      </Suspense>
+    </BrowserRouter>
+  );
+};

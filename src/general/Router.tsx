@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 
-import { RoutePaths } from "./RoutePaths";
-import { Home } from "../home/Home";
-import { Portfolio } from "../portfolio/Portfolio";
-import { ArtworkDetail } from "../portfolio/ArtworkDetail";
-import { About } from "../about/About";
-import { Commissions } from "../commissions/Commissions";
-import { Contact } from "../contact/Contact";
+import { Home } from "../pages/home/Home";
+import { Portfolio } from "../pages/portfolio/Portfolio";
+import { ArtworkDetail } from "../pages/portfolio/ArtworkDetail";
+import { About } from "../pages/about/About";
+import { Commissions } from "../pages/commissions/Commissions";
+import { Contact } from "../pages/contact/Contact";
+import { FAQ } from "../pages/faq/FAQ";
 import { NotFound } from "./NotFound";
 import { Layout } from "./Layout";
-import { FAQ } from "../faq/FAQ";
+import { RoutePaths } from "./RoutePaths";
 
 export const Router = () => (
   <Routes>

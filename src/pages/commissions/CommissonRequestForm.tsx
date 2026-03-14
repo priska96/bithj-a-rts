@@ -1,8 +1,10 @@
 import { useState, ChangeEvent, FormEvent } from "react";
-import { Button } from "../components/ui/Button";
-import { InputField } from "../components/ui/InputField";
-import { SelectField } from "../components/ui/SelectField";
-import { TextArea } from "../components/ui/TextArea";
+import { Button } from "../../components/ui/Button";
+import { InputField } from "../../components/ui/InputField";
+import { SelectField } from "../../components/ui/SelectField";
+import { TextArea } from "../../components/ui/TextArea";
+import { sendEmail } from "../../utils/sendEmail";
+import { CONTACT_TEMPLATE_ID } from "../../constants/emailJs";
 
 interface CommissionForm {
   name: string;
@@ -25,6 +27,7 @@ export const CommissionRequestForm = () => {
     timeline: "",
     description: "",
   });
+  const [status, setStatus] = useState("Anfrage für ein Kunstwerk absenden");
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -38,26 +41,36 @@ export const CommissionRequestForm = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const mailtoLink = `mailto:your-email@example.com?subject=Commission Request from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(
-      `Commission Request Details:\n\n` +
-        `Name: ${formData.name}\n` +
-        `Email: ${formData.email}\n` +
-        `Phone: ${formData.phone}\n\n` +
-        `Artwork Type: ${formData.artworkType}\n` +
-        `Preferred Size: ${formData.size}\n` +
-        `Budget Range: ${formData.budget}\n` +
-        `Timeline: ${formData.timeline}\n\n` +
-        `Project Description:\n${formData.description}`
-    )}`;
+    setStatus("Versende Nachricht...");
+    sendEmail(CONTACT_TEMPLATE_ID, {
+      name: formData.name,
+      email: formData.email,
+      intro: "bithja.arts du hast eine neue Kaufanfrage erhalten.",
+      subject: "Kaufanfrage:" + formData.artworkType,
+      message: `Name: ${formData.name}\nEmail: ${formData.email}\nHandynr: ${formData.phone}\nKunstwerkart: ${formData.artworkType}\nGröße: ${formData.size}\nBudget: ${formData.budget}\nZeitlinie: ${formData.timeline}\nProjektbeschreibung:\n${formData.description}`,
+      time: new Date().toISOString(),
+    });
 
-    window.location.href = mailtoLink;
+    setTimeout(() => {
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        artworkType: "",
+        size: "",
+        budget: "",
+        timeline: "",
+        description: "",
+      });
+      setStatus("Anfrage für ein Kunstwerk absenden");
+    }, 2000);
   };
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       {/* Personal Information */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <InputField
-          label="Full Name *"
+          label="Vollständiger Name *"
           type="text"
           name="name"
           required
@@ -66,7 +79,7 @@ export const CommissionRequestForm = () => {
         />
 
         <InputField
-          label="Email Address *"
+          label="Email *"
           type="email"
           name="email"
           required
@@ -76,7 +89,7 @@ export const CommissionRequestForm = () => {
       </div>
 
       <InputField
-        label="Phone Number (Optional)"
+        label="Handynummer (Optional)"
         type="tel"
         name="phone"
         value={formData.phone}
@@ -86,7 +99,7 @@ export const CommissionRequestForm = () => {
       {/* Artwork Details */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <SelectField
-          label="Artwork Type *"
+          label="Kunstwerkart *"
           name="artworkType"
           required
           value={formData.artworkType}
@@ -101,7 +114,7 @@ export const CommissionRequestForm = () => {
           ]}
         />
         <SelectField
-          label="Preferred Size *"
+          label="Bevorzugte Größe *"
           name="size"
           required
           value={formData.size}
@@ -118,7 +131,7 @@ export const CommissionRequestForm = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <SelectField
-          label="Budget Range *"
+          label="Budget *"
           name="budget"
           required
           value={formData.budget}
@@ -132,7 +145,7 @@ export const CommissionRequestForm = () => {
           ]}
         />
         <SelectField
-          label="Desired Timeline *"
+          label="Bevorzugte Zeitlinie *"
           name="timeline"
           required
           value={formData.timeline}
@@ -148,11 +161,11 @@ export const CommissionRequestForm = () => {
       </div>
 
       <TextArea
-        label="Project Description *"
+        label="Projektbeschreibung *"
         name="description"
         required
         value={formData.description}
-        placeholder="Tell me about your vision... What inspires you? What emotions or themes would you like to explore? Are there any specific colors, motifs, or existing works of mine that resonate with you?"
+        placeholder="Erzähle mir von deiner Vision... Was inspiriert dich? Welche Emotionen oder Themen möchtest du erkunden? Gibt es bestimmte Farben, Motive oder bestehende Werke von mir, die dich ansprechen?"
         onChange={handleChange}
         rows={6}
       />
@@ -162,12 +175,12 @@ export const CommissionRequestForm = () => {
         variant="solidPrimary"
         className="w-full rounded-md"
       >
-        Submit Commission Request
+        {status}
       </Button>
 
       <p className="text-sm text-main-text/70 text-center">
-        * By submitting this form, you agree to be contacted regarding your
-        commission request
+        * Durch das Absenden dieses Formulars stimmen Sie zu, bezüglich Ihrer
+        Anfrage für ein Kunstwerk kontaktiert zu werden.
       </p>
     </form>
   );

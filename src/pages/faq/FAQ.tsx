@@ -1,6 +1,6 @@
-import { Card } from "../components/ui/Card";
-import HeroSection from "../components/ui/HeroSection";
-import Section from "../components/ui/Section";
+import { Card } from "../../components/ui/Card";
+import HeroSection from "../../components/ui/HeroSection";
+import Section from "../../components/ui/Section";
 
 export const FAQ = () => {
   return (

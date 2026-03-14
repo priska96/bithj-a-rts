@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { HeroSection } from "../components/ui/HeroSection";
-import { Button } from "../components/ui/Button";
-import { artPieces } from "../constants/artwork";
-import { ImageCard } from "../components/ui/ImageCard";
+import { HeroSection } from "../../components/ui/HeroSection";
+import { Button } from "../../components/ui/Button";
+import { artPieces } from "../../constants/artwork";
+import { ImageCard } from "../../components/ui/ImageCard";
 
 const categories = [
   "All",

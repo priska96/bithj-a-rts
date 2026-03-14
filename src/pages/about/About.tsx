@@ -1,9 +1,9 @@
-import { RoutePaths } from "../general/RoutePaths";
-import { CTASection } from "../components/ui/CTASection";
-import { HeroSection } from "../components/ui/HeroSection";
-import { Image } from "../components/ui/Image";
-import { Section } from "../components/ui/Section";
-import ColorSwatchTable from "../components/ui/ColorSwatchTable";
+import { RoutePaths } from "../../general/RoutePaths";
+import { CTASection } from "../../components/ui/CTASection";
+import { HeroSection } from "../../components/ui/HeroSection";
+import { Image } from "../../components/ui/Image";
+import { Section } from "../../components/ui/Section";
+import ColorSwatchTable from "../../components/ui/ColorSwatchTable";
 
 export const About = () => (
   <div className="min-h-screen">

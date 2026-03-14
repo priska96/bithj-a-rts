@@ -1,12 +1,12 @@
-import { RoutePaths } from "../general/RoutePaths";
-import { Card } from "../components/ui/Card";
-import { CTASection } from "../components/ui/CTASection";
-import { HeroSection } from "../components/ui/HeroSection";
-import Section from "../components/ui/Section";
+import { RoutePaths } from "../../general/RoutePaths";
+import { Card } from "../../components/ui/Card";
+import { CTASection } from "../../components/ui/CTASection";
+import { HeroSection } from "../../components/ui/HeroSection";
+import Section from "../../components/ui/Section";
 import { CommissionStep } from "./CommissionStep";
 import { CommissionTerms } from "./CommissionTerms";
-import { CashIcon } from "../components/icons/CashIcon";
-import { TimeIcon } from "../components/icons/TimeIcon";
+import { CashIcon } from "../../components/icons/CashIcon";
+import { TimeIcon } from "../../components/icons/TimeIcon";
 import { CommissionRequestForm } from "./CommissonRequestForm";
 
 export const Commissions = () => {

@@ -1,5 +1,5 @@
-import Button from "../components/ui/Button";
-import { RoutePaths } from "../general/RoutePaths";
+import Button from "../../components/ui/Button";
+import { RoutePaths } from "../../general/RoutePaths";
 
 export const NoArtworkFound = () => {
   return (
