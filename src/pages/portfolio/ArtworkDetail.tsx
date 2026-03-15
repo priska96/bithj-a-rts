@@ -79,6 +79,7 @@ export const ArtworkDetail = () => {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           {/* Image Section */}
           <Image src={artwork.image} alt={artwork.title} />
+
           {/* Details Section */}
           <div className="space-y-8">
             {/* Title and Category */}
@@ -129,34 +130,39 @@ export const ArtworkDetail = () => {
                 ))}
               </dl>
             </Card>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 mt-10 mb-8">
+          <h1 className="text-4xl font-bold text-main-text sm:text-5xl">
+            Wie die Idee entstand
+          </h1>
+          <p className="text-xl text-main-text/70">{artwork.idea}</p>
+        </div>
+        {/* Call to Action */}
+        <div className="rounded-lg bg-primary/20 p-6">
+          <h3 className="text-xl font-bold text-main-text">
+            {t("portfolio.details.ctaTitle")}
+          </h3>
+          <p className="mt-2 text-main-text/70">
+            {artwork.availability === Availability.Available
+              ? t("portfolio.details.ctaAvailable")
+              : t("portfolio.details.ctaSold")}
+          </p>
+          <Link
+            to={`${RoutePaths.SHOP}?artworkId=${artwork.id}`}
+            className="mt-4 inline-block rounded-md bg-primary px-6 py-3 text-white transition-colors hover:bg-primary/80"
+          >
+            {t("portfolio.details.buyButton")}
+          </Link>
+        </div>
 
-            {/* Call to Action */}
-            <div className="rounded-lg bg-primary/20 p-6">
-              <h3 className="text-xl font-bold text-main-text">
-                {t("portfolio.details.ctaTitle")}
-              </h3>
-              <p className="mt-2 text-main-text/70">
-                {artwork.availability === Availability.Available
-                  ? t("portfolio.details.ctaAvailable")
-                  : t("portfolio.details.ctaSold")}
-              </p>
-              <Link
-                to={`${RoutePaths.SHOP}?artworkId=${artwork.id}`}
-                className="mt-4 inline-block rounded-md bg-primary px-6 py-3 text-white transition-colors hover:bg-primary/80"
-              >
-                {t("portfolio.details.buyButton")}
-              </Link>
-            </div>
-
-            {/* Share Section */}
-            <div>
-              <h3 className="mb-3 text-lg font-medium text-main-text">
-                {t("portfolio.details.shareTitle")}
-              </h3>
-              <div className="flex gap-3">
-                <ShareIcon />
-              </div>
-            </div>
+        {/* Share Section */}
+        <div>
+          <h3 className="mb-3 text-lg font-medium text-main-text">
+            {t("portfolio.details.shareTitle")}
+          </h3>
+          <div className="flex gap-3">
+            <ShareIcon />
           </div>
         </div>
       </div>
