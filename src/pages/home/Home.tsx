@@ -6,6 +6,7 @@ import { Chip } from "../../components/ui/Chip";
 import { CTASection } from "../../components/ui/CTASection";
 import { Section } from "../../components/ui/Section";
 import { artPieces } from "../../constants/artwork";
+import { baseUrl } from "../../constants/baseUrl";
 import colorMixingPalette from "/images/colorMixingPalette.jpeg";
 
 export const Home = () => {
@@ -58,7 +59,7 @@ export const Home = () => {
             .map((artwork, index) => (
               <Link
                 key={artwork.id}
-                to={`/artwork/${artwork.id}`}
+                to={`${baseUrl}/artwork/${artwork.id}`}
                 className="group block"
               >
                 <div
