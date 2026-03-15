@@ -2,6 +2,7 @@ import emailjs from "emailjs-com";
 import { Suspense, PropsWithChildren } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Router } from "./general/Router";
+import { ScrollToTop } from "./general/ScrollToTop";
 import { Loading } from "./components/Loading";
 
 export const PageWithHeader = ({ children }: PropsWithChildren) => (
@@ -12,6 +13,7 @@ export const App = () => {
   emailjs.init("wTAo3NNd0S5v1dizn");
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Suspense
         fallback={
           <PageWithHeader>
