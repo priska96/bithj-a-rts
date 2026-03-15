@@ -28,11 +28,11 @@ export const Home = () => {
         <div className="relative z-10 mx-auto flex min-h-[600px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:min-h-[700px] lg:px-12">
           <div className="max-w-xl text-white">
             <h1 className="text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-              <span className="block">{t("home.hero.titleLine1")}</span>
-              <span className="text-primary">{t("home.hero.titleLine2")}</span>
+              <span className="block">bithj.a.rts</span>
             </h1>
             <p className="mt-6 text-xl text-white/80 lg:text-2xl">
-              {t("home.hero.subtitle")}
+              Art should never be quiet 🎨 Kunst ist kein Kommentar zur Welt.
+              Sie ist Teil von ihr.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Button to={RoutePaths.PORTFOLIO} variant="solidPrimary">

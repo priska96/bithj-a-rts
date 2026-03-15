@@ -1,6 +1,7 @@
 import { ArtCategory } from "./artCategory";
 import { Availability } from "./availability";
 import { ArtMaterials, ArtMediums } from "./artMaterials";
+import { ON_REQUEST_PRICE } from "./price";
 import hands from "/images/hands.jpeg"; // references the public folder
 import kiwi from "/images/kiwi.jpeg";
 import skinBeforeSin from "/images/skinBeforeSin.jpeg";
@@ -40,11 +41,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "21 x 29,7 cm (BxH)",
     medium: ArtMediums.Drawing,
-    price: "1.200€",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2022",
     summary:
-      "An exploration of color and form that delves into the subconscious mind, bringing dreams and imagination to life through bold brushstrokes and vibrant hues. This piece represents the freedom of artistic expression and the boundless nature of creativity.",
+      "Das Bild verbindet die zarte Intensität ineinandergreifender Hände aus der Beschreibung mit der Idee einer in der Dating-Kultur verloren gehenden, echten Intimität und Geborgenheit.",
   },
   {
     id: 2,
@@ -55,10 +56,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "60 x 80 cm (BxH)",
     medium: ArtMediums.Painting,
-    price: "800€",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2012",
-    summary: "",
+    summary:
+      "Als Stillleben fokussiert „Kiwi“ die reduzierte Präsenz der Frucht und formuliert die Idee, im Einfachen eine ruhige, konzentrierte Form von Schönheit sichtbar zu machen.",
   },
   {
     id: 3,
@@ -71,11 +73,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.MixedMediaOnCanvas,
     dimensions: '30 × 40 cm (BxH)"',
     medium: ArtMediums.MixedMedia,
-    price: "1.000€",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2024",
     summary:
-      "Contemporary portrait work that explores identity and emotion through expressive use of color and texture, creating a dialogue between subject and viewer. This piece challenges traditional portraiture by infusing it with modern artistic techniques and personal expression.",
+      "Die Darstellung des weiblichen Körpers als ursprüngliche, urteilsfreie Präsenz verbindet sich mit der Idee, Eva vor dem historischen Schuldurteil sichtbar zu machen und Weiblichkeit von Scham zu lösen.",
   },
   {
     id: 4,
@@ -88,9 +90,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "40 x 40 cm (BxH)",
     medium: ArtMediums.Painting,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2026",
+    summary:
+      "„Free Iran“ verbindet die Beschreibung von Schmerz, Sehnsucht und Hoffnung eines unterdrückten Volkes mit der Idee eines leisen Protestes, der fehlende Aufmerksamkeit und internationale Solidarität einfordert.",
   },
   {
     id: 5,
@@ -103,9 +107,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "26 x 32 cm (BxH)",
     medium: ArtMediums.Painting,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2026",
+    summary:
+      "Das Bild setzt die sichtbare Trennung von Himmel und Wasser aus der Beschreibung mit der Idee zusammen, dass im Hebräischen trotz Distanz eine tiefe Verbindung zwischen göttlicher und menschlicher Wirklichkeit aufscheint.",
   },
   {
     id: 6,
@@ -118,9 +124,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCardboard,
     dimensions: "24 x 29 cm (BxH)",
     medium: ArtMediums.Painting,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2026",
+    summary:
+      "„Reset & Reseed“ verbindet den Granatapfel als Bild eines gesellschaftlichen Neubeginns mit der Idee eines politischen Resets, in dem iranische Kultur frei, sichtbar und ohne Unterdrückung neu Wurzeln schlagen kann.",
   },
   {
     id: 7,
@@ -133,9 +141,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.MixedMediaOnCanvas,
     dimensions: "33 x 36 cm (BxH)",
     medium: ArtMediums.MixedMedia,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2026",
+    summary:
+      "Die Collage verdichtet die in der Beschreibung benannte Flüchtigkeit urbaner Begegnungen mit der Idee eines ‚failed dating summer‘, in dem Nähe, Hoffnung und Verschwinden permanent ineinander kippen.",
   },
   {
     id: 8,
@@ -146,9 +156,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCardboard,
     dimensions: "16.5 x 25 cm (BxH)",
     medium: ArtMediums.MixedMedia,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2026",
+    summary:
+      "„Maher“ erscheint als abstrakte Collage, die die knappe Beschreibung bewusst offen lässt und die Idee eines fragmentarischen, emotionalen Resonanzraums trägt.",
   },
   {
     id: 9,
@@ -159,9 +171,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "40 x 40 cm (BxH)",
     medium: ArtMediums.Painting,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2026",
+    summary:
+      "„Maher Mama“ verbindet die reduzierte formale Anlage mit der Idee einer stillen, persönlichen Erzählung über Nähe, Herkunft und Erinnerung.",
   },
   {
     id: 10,
@@ -173,9 +187,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCardboard,
     dimensions: "30 x 40 cm (BxH)",
     medium: ArtMediums.Painting,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2026",
+    summary:
+      "„Bike“ verbindet die comicartige Dynamik und bewegte Linienführung der Beschreibung mit der Idee, Geschwindigkeit und urbane Energie in ein verdichtetes Bildmoment zu übersetzen.",
   },
   {
     id: 11,
@@ -186,9 +202,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.WatercolorOnCardboard,
     dimensions: "29.7 x 42 cm (BxH)",
     medium: ArtMediums.Watercolor,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Sold,
     year: "2026",
+    summary:
+      "„Lou“ ist als sensibles Aquarellporträt angelegt und folgt der Idee, Persönlichkeit durch leichte Farbschichten und zurückhaltende Form sichtbar zu machen.",
   },
   {
     id: 12,
@@ -201,9 +219,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCardboard,
     dimensions: "29.7 x 42 cm (BxH)",
     medium: ArtMediums.Painting,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Sold,
     year: "2026",
+    summary:
+      "„Der Walache“ verbindet die Beschreibung einer bedrohten kulturellen Erinnerung mit der Idee, durch persönliche Nähe und Sichtbarkeit ein oft übersehenes Erbe bewusst ins Zentrum zu rücken.",
   },
   {
     id: 13,
@@ -216,9 +236,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.PastelOnCardboard,
     dimensions: "29.7 x 42 cm (BxH)",
     medium: ArtMediums.Painting,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2026",
+    summary:
+      "Das halb gezeichnete Gesicht zwischen Licht und Schatten verbindet die Beschreibung einer entmenschlichenden Schönheitsoptimierung mit der Idee, dass im Looksmaxxing-Trend das Eigentliche des Menschen verloren gehen kann.",
   },
   {
     id: 14,
@@ -229,9 +251,11 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.WatercolorOnCardboard,
     dimensions: "29.7 x 42 cm (BxH)",
     medium: ArtMediums.Painting,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Sold,
     year: "2026",
+    summary:
+      "„Hildi“ ist als Porträtarbeit gedacht und trägt die Idee, Individualität in einer stillen, konzentrierten Bildsprache sichtbar werden zu lassen.",
   },
   {
     id: 15,
@@ -242,8 +266,10 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.PencilOnCardboard,
     dimensions: "19 x 23 cm (BxH)",
     medium: ArtMediums.Drawing,
-    price: "On request",
+    price: ON_REQUEST_PRICE,
     availability: Availability.Available,
     year: "2026",
+    summary:
+      "„Alucard“ setzt die zeichnerische Präzision des Comic-Genres mit der Idee in Beziehung, Charakter und Spannung über klare Konturen und verdichtete Gestik zu erzählen.",
   },
 ];

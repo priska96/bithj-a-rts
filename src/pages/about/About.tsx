@@ -32,6 +32,7 @@ export const About = () => {
               <p className="text-main-text">{t("about.storyParagraph1")}</p>
               <p className="text-main-text">{t("about.storyParagraph2")}</p>
               <p className="text-main-text">{t("about.storyParagraph3")}</p>
+              <p className="text-main-text">{t("about.storyParagraph4")}</p>
             </div>
           </div>
         </div>
@@ -41,13 +42,17 @@ export const About = () => {
       <Section title={t("about.philosophyTitle")} center>
         <div className="prose prose-lg max-w-none space-y-6 text-center text-gray-700">
           <p className="text-xl font-light italic text-main-text">
-            &quot;{t("about.philosophyQuote")}&quot;
+            &quot;Art should never be quiet 🎨 Kunst ist kein Kommentar zur
+            Welt. Sie ist Teil von ihr.&quot;
           </p>
           <p className="text-lg text-main-text">
             {t("about.philosophyParagraph1")}
           </p>
           <p className="text-lg text-main-text">
             {t("about.philosophyParagraph2")}
+          </p>
+          <p className="text-lg text-main-text">
+            {t("about.philosophyParagraph3")}
           </p>
         </div>
       </Section>

@@ -36,6 +36,9 @@
     "sold": "Sold",
     "available": "Available"
   },
+  "price": {
+    "onRequest": "On request"
+  },
   "materials": {
     "acrylicOnCanvas": "Acrylic on canvas",
     "oilOnCanvas": "Oil on canvas",
@@ -73,9 +76,6 @@
   "home": {
     "hero": {
       "imageAlt": "Artist hero image",
-      "titleLine1": "Visual Artist &",
-      "titleLine2": "Creative Soul",
-      "subtitle": "Transforming emotions and experiences into captivating visual stories",
       "primaryButton": "Explore my work",
       "secondaryButton": "Let's collaborate"
     },
@@ -122,13 +122,14 @@
     "heroSubtitle": "\"Art is not what you see, but what you make others see\"",
     "storyTitle": "My story",
     "storyAlt": "Artist portrait",
-    "storyParagraph1": "Hello! I'm a passionate visual artist dedicated to exploring the intersection of color, emotion, and form. My journey in art began over a decade ago, and since then, I've been captivated by the endless possibilities of creative expression.",
-    "storyParagraph2": "My work ranges from bold abstract pieces to intimate portraits, each created with the intention of evoking emotion and sparking conversation. I believe that art has the power to connect us, challenge us, and help us see the world through new perspectives.",
-    "storyParagraph3": "Whether working with traditional media or digital tools, I strive to create pieces that resonate deeply with viewers and stand the test of time. My artistic practice is rooted in experimentation, authenticity, and a deep love for the creative process.",
+    "storyParagraph1": "My name is Bithja, I am 37 years old and was born in November — a Scorpio. Alongside my artistic work, I am studying theology for my state examination. Between art and theology, I keep discovering new spaces for thinking, feeling, and questioning.",
+    "storyParagraph2": "My work often moves between socially critical, political, and theological themes. I am especially interested in questions of identity, body, power, faith, and cultural heritage. Through my studies, I engage deeply with Judaism as well as Ancient Hebrew and Ancient Greek texts — languages in which meanings often run deeper than first impressions suggest.",
+    "storyParagraph3": "Alongside these more philosophical and theological influences, I am also interested in fashion, aesthetics, and body language. Clothing, the body, and staging tell stories about identity, spirit of the times, and social roles. In my artistic work, I use different media: collage, acrylic and oil paint, watercolor, oil and pastel chalk, and pencil drawings. I enjoy working figuratively and realistically, and I focus on anatomy, figure drawing, and nature.",
+    "storyParagraph4": "I also love wordplay, ambiguity, and occasionally youth slang — because for me, art should not only analyze, but also surprise, provoke, and sometimes make you smile.",
     "philosophyTitle": "Artistic philosophy",
-    "philosophyQuote": "For me, art is more than just creating beautiful objects—it's a dialogue between the artist, the artwork, and the viewer.",
-    "philosophyParagraph1": "I believe in the transformative power of color. The way hues interact, contrast, and harmonize can evoke emotions that words cannot express. My palette choices are deliberate yet intuitive, always seeking to create a visceral response in the viewer.",
-    "philosophyParagraph2": "My process is one of constant exploration and experimentation. I'm not afraid to take risks, try new techniques, or venture into unfamiliar territory. Some of my most meaningful work has emerged from moments of uncertainty and creative play.",
+    "philosophyParagraph1": "I am interested not only in what the eyes see, but in what the heart recognizes. For me, reality is not exhausted by the rational or the merely explainable. Art begins where thought, feeling, and experience flow into one another. In this sense, I feel close to ideas from Blaise Pascal. When I speak of the heart, I do not mean mere emotion, but an immediate mode of knowing. Some truths cannot be proven argumentatively — they reveal themselves as inner certainty.",
+    "philosophyParagraph2": "My work therefore does not follow a purely naturalistic claim. It does not aim to simply depict what is already visible, but to make visible what escapes purely intellectual understanding. I do not see the human being as an isolated entity. Here I am especially inspired by Friedrich Schleiermacher, who understood feeling as a fundamental mode of human perception — as awareness of our embeddedness in world, history, relationships, and something greater than ourselves.",
+    "philosophyParagraph3": "For me, art thus becomes a space of resonance in which personal experience, social reality, political questions, and spiritual seeking enter into relationship with one another. Especially in a city like Berlin — shaped by diversity, tensions, and rapid change — I see art as a place of dialogue. Not to harden positions, but to make them visible and negotiable. My works invite people to pause, locate themselves, and enter into exchange — with the image, with others, and with their own stance. Art should not decorate. It should connect.",
     "ctaHeading": "Let's create together",
     "ctaSubheading": "Interested in commissioning a piece, collaborating on a project, or learning more about my work?",
     "ctaPrimary": "View portfolio",

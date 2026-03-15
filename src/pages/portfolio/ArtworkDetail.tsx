@@ -5,6 +5,7 @@ import { Chip } from "../../components/ui/Chip";
 import { Image } from "../../components/ui/Image";
 import { artPieces } from "../../constants/artwork";
 import { Availability } from "../../constants/availability";
+import { ON_REQUEST_PRICE } from "../../constants/price";
 import { RoutePaths } from "../../general/RoutePaths";
 import { NoArtworkFound } from "./NoArtworkFound";
 import { ShareIcon } from "../../components/icons/ShareIcon";
@@ -42,7 +43,14 @@ export const ArtworkDetail = () => {
     ...(artwork.series
       ? [{ label: t("portfolio.details.series"), value: artwork.series }]
       : []),
-    { label: t("portfolio.details.price"), value: artwork.price, bold: true },
+    {
+      label: t("portfolio.details.price"),
+      value:
+        artwork.price === ON_REQUEST_PRICE
+          ? t("price.onRequest")
+          : artwork.price,
+      bold: true,
+    },
     {
       label: t("portfolio.details.availability"),
       value: artwork.availability,

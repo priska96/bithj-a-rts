@@ -36,6 +36,9 @@
     "sold": "Verkauft",
     "available": "Verfügbar"
   },
+  "price": {
+    "onRequest": "Auf Anfrage"
+  },
   "materials": {
     "acrylicOnCanvas": "Acryl auf Leinwand",
     "oilOnCanvas": "Öl auf Leinwand",
@@ -73,9 +76,6 @@
   "home": {
     "hero": {
       "imageAlt": "Hero-Bild der Künstlerin",
-      "titleLine1": "Visuelle Künstlerin &",
-      "titleLine2": "Kreative Seele",
-      "subtitle": "Ich verwandle Emotionen und Erfahrungen in fesselnde visuelle Geschichten",
       "primaryButton": "Meine Werke entdecken",
       "secondaryButton": "Lass uns zusammenarbeiten"
     },
@@ -122,13 +122,14 @@
     "heroSubtitle": "\"Kunst ist nicht das, was du siehst, sondern das, was du andere sehen lässt.\"",
     "storyTitle": "Meine Geschichte",
     "storyAlt": "Porträt der Künstlerin",
-    "storyParagraph1": "Hallo! Ich bin eine leidenschaftliche visuelle Künstlerin, die sich der Erforschung von Farbe, Emotion und Form widmet. Meine künstlerische Reise begann vor über einem Jahrzehnt, und seitdem faszinieren mich die unendlichen Möglichkeiten kreativen Ausdrucks.",
-    "storyParagraph2": "Meine Arbeiten reichen von ausdrucksstarken abstrakten Werken bis hin zu intimen Porträts – jedes einzelne mit dem Ziel, Emotionen zu wecken und Gespräche anzustoßen. Ich glaube, dass Kunst die Kraft hat, uns zu verbinden, uns herauszufordern und uns die Welt aus neuen Perspektiven sehen zu lassen.",
-    "storyParagraph3": "Ob mit traditionellen Medien oder digitalen Werkzeugen – ich strebe danach, Werke zu schaffen, die tief mit den Betrachtenden resonieren und die Zeit überdauern. Meine künstlerische Praxis ist geprägt von Experimentierfreude, Authentizität und einer tiefen Liebe zum kreativen Prozess.",
+    "storyParagraph1": "Ich heiße Bithja, bin 37 Jahre alt und im November geboren – also Skorpion. Neben meiner künstlerischen Arbeit studiere ich Theologie auf Examen. Zwischen Kunst und Theologie entdecke ich für mich immer wieder neue Räume des Denkens, Fühlens und Fragens.",
+    "storyParagraph2": "Meine Arbeiten bewegen sich häufig zwischen gesellschaftskritischen, politischen und theologischen Themen. Besonders interessieren mich Fragen nach Identität, Körper, Macht, Glauben und kulturellem Erbe. Durch mein Studium beschäftige ich mich intensiv mit dem Judentum sowie mit alt-hebräischen und alt-griechischen Texten – Sprachen, in denen Bedeutungen oft tiefer liegen als das erste Verständnis vermuten lässt.",
+    "storyParagraph3": "Neben diesen eher philosophischen und theologischen Einflüssen interessieren mich auch Mode, Ästhetik und Körpersprache. Kleidung, Körper und Inszenierung erzählen Geschichten über Identität, Zeitgeist und gesellschaftliche Rollen. In meiner künstlerischen Arbeit nutze ich unterschiedliche Medien: Collagen, Acryl- und Ölfarbe, Wasserfarbe, Öl- und Pastellkreide sowie Bleistiftzeichnungen. Ich arbeite gerne figurativ und realistisch, beschäftige mich mit Anatomie, Aktzeichnungen und Natur.",
+    "storyParagraph4": "Dabei liebe ich auch Wortspiele, Mehrdeutigkeiten und gelegentlich Jugendsprache – weil Kunst für mich nicht nur analysieren, sondern auch überraschen, irritieren und manchmal schmunzeln lassen darf.",
     "philosophyTitle": "Künstlerische Philosophie",
-    "philosophyQuote": "Für mich ist Kunst mehr als nur das Erschaffen schöner Objekte – sie ist ein Dialog zwischen der Künstlerin, dem Werk und den Betrachtenden.",
-    "philosophyParagraph1": "Ich glaube an die transformative Kraft der Farbe. Wie Farbtöne miteinander interagieren, kontrastieren und harmonieren, kann Emotionen hervorrufen, die Worte nicht ausdrücken können. Meine Farbwahl ist bewusst und zugleich intuitiv – stets auf der Suche nach einer unmittelbaren Reaktion im Gegenüber.",
-    "philosophyParagraph2": "Mein Prozess ist geprägt von stetiger Erkundung und Experimentierfreude. Ich habe keine Angst davor, Risiken einzugehen, neue Techniken auszuprobieren oder unbekanntes Terrain zu betreten. Einige meiner bedeutungsvollsten Arbeiten entstanden in Momenten der Unsicherheit und des kreativen Spiels.",
+    "philosophyParagraph1": "Mich interessiert nicht nur, was die Augen sehen – sondern was das Herz erkennt. Wirklichkeit erschöpft sich für mich nicht im Rationalen oder im rein Erklärbaren. Kunst beginnt dort, wo Denken, Gefühl und Erfahrung ineinander übergehen. In diesem Verständnis fühle ich mich Gedanken von Blaise Pascal nahe. Wenn ich vom Herzen spreche, meine ich nicht bloße Emotion, sondern eine unmittelbare Weise des Erkennens. Manche Wahrheiten lassen sich nicht argumentativ beweisen – sie zeigen sich als innere Gewissheit.",
+    "philosophyParagraph2": "Meine Arbeiten folgen deshalb keinem rein naturalistischen Anspruch. Sie wollen nicht einfach abbilden, was ohnehin sichtbar ist, sondern sichtbar machen, was sich einer rein verstandesmäßigen Erkenntnis entzieht. Dabei verstehe ich den Menschen nicht als isoliertes Wesen. Hier inspiriert mich besonders Friedrich Schleiermacher, der das Gefühl als eine grundlegende Wahrnehmung des Menschen versteht – als Bewusstsein des eigenen Eingebundenseins in Welt, Geschichte, Beziehungen und etwas, das größer ist als wir selbst.",
+    "philosophyParagraph3": "Kunst wird für mich dadurch zu einem Resonanzraum, in dem persönliches Erleben, gesellschaftliche Wirklichkeit, politische Fragen und spirituelle Suche miteinander in Beziehung treten. Gerade in einer Stadt wie Berlin – geprägt von Vielfalt, Spannungen und schnellen Veränderungen – sehe ich Kunst als einen Ort des Dialogs. Nicht, um Positionen zu verhärten, sondern um sie sichtbar und verhandelbar zu machen. Meine Arbeiten laden dazu ein, innezuhalten, sich selbst zu verorten und in einen Austausch zu treten – mit dem Bild, mit anderen und mit der eigenen Haltung. Denn Kunst soll nicht dekorieren. Sie soll verbinden.",
     "ctaHeading": "Lass uns gemeinsam gestalten",
     "ctaSubheading": "Interessierst du dich für ein Auftragswerk, eine Zusammenarbeit oder möchtest du mehr über meine Arbeit erfahren?",
     "ctaPrimary": "Portfolio ansehen",
