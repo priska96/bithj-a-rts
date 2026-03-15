@@ -10,14 +10,14 @@ import { ImageCard } from "../../components/ui/ImageCard";
 const categories: Array<ArtCategory | "All"> = [
   "All",
   ...new Set(
-    artPieces.filter((artwork) => artwork.image).map((piece) => piece.category)
+    artPieces.filter((artwork) => artwork.image).map((piece) => piece.category),
   ),
 ];
 
 export const Portfolio = () => {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState<ArtCategory | "All">(
-    "All"
+    "All",
   );
 
   const categoryLabel = (category: string) =>
@@ -59,7 +59,7 @@ export const Portfolio = () => {
           {filteredPieces.map((piece) => (
             <Link
               key={piece.id}
-              to={`/artwork/${piece.id}`}
+              to={`${baseUrl}artwork/${piece.id}`}
               className="group cursor-pointer overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-xl"
             >
               <ImageCard
