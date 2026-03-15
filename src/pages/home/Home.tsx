@@ -6,6 +6,7 @@ import { Chip } from "../../components/ui/Chip";
 import { CTASection } from "../../components/ui/CTASection";
 import { Section } from "../../components/ui/Section";
 import { artPieces } from "../../constants/artwork";
+import colorMixingPalette from "/images/colorMixingPalette.jpeg";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -18,8 +19,7 @@ export const Home = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-white min-h-[600px] lg:min-h-[700px]">
         <img
-          src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1600"
-          alt={t("home.hero.imageAlt")}
+          src={colorMixingPalette}
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/20" />
