@@ -1,7 +1,7 @@
 import { ArtCategory } from "./artCategory";
 import { Availability } from "./availability";
 import { ArtMaterials, ArtMediums } from "./artMaterials";
-import hands from "/images/hands.jpeg";
+import hands from "/images/hands.jpeg"; // references the public folder
 import kiwi from "/images/kiwi.jpeg";
 import skinBeforeSin from "/images/skinBeforeSin.jpeg";
 import freeIran from "/images/freeIran.jpeg";
