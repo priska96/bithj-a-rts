@@ -9,6 +9,7 @@ import { CommissionTerms } from "./CommissionTerms";
 import { CashIcon } from "../../components/icons/CashIcon";
 import { TimeIcon } from "../../components/icons/TimeIcon";
 import { CommissionRequestForm } from "./CommissonRequestForm";
+import colorMixingPaletteSmall from "/images/colorMixingPalette-small.jpeg";
 
 export const Commissions = () => {
   const { t } = useTranslation();
@@ -50,7 +51,7 @@ export const Commissions = () => {
             step={3}
             title={t("commissions.steps.creationTitle")}
             description={t("commissions.steps.creationDescription")}
-            imageSrc="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800"
+            imageSrc={colorMixingPaletteSmall}
             imageAlt={t("commissions.steps.creationAlt")}
           />
         </div>
