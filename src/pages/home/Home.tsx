@@ -54,7 +54,10 @@ export const Home = () => {
         {/* Featured Artwork Items - Alternating Layout */}
         <div className="space-y-24">
           {artPieces
-            .filter((artwork) => artwork.image)
+            .filter(
+              (artwork) =>
+                artwork.image && artwork.summary && artwork.description,
+            )
             .slice(0, 3)
             .map((artwork, index) => (
               <Link
