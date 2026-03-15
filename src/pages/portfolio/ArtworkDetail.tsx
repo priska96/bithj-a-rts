@@ -134,7 +134,7 @@ export const ArtworkDetail = () => {
         </div>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 mt-10 mb-8">
           <h1 className="text-4xl font-bold text-main-text sm:text-5xl">
-            Wie die Idee entstand
+            {t("portfolio.details.ideaTitle")}
           </h1>
           <p className="text-xl text-main-text/70">{artwork.idea}</p>
         </div>
