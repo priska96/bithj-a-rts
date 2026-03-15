@@ -109,7 +109,7 @@ export const artPieces: ArtPiece[] = [
     medium: ArtMediums.Painting,
     price: ON_REQUEST_PRICE,
     availability: Availability.Available,
-    year: "2026",
+    year: "2025",
     summary:
       "Das Bild setzt die sichtbare Trennung von Himmel und Wasser aus der Beschreibung mit der Idee zusammen, dass im Hebräischen trotz Distanz eine tiefe Verbindung zwischen göttlicher und menschlicher Wirklichkeit aufscheint.",
   },
@@ -126,7 +126,7 @@ export const artPieces: ArtPiece[] = [
     medium: ArtMediums.Painting,
     price: ON_REQUEST_PRICE,
     availability: Availability.Available,
-    year: "2026",
+    year: "2025",
     summary:
       "„Reset & Reseed“ verbindet den Granatapfel als Bild eines gesellschaftlichen Neubeginns mit der Idee eines politischen Resets, in dem iranische Kultur frei, sichtbar und ohne Unterdrückung neu Wurzeln schlagen kann.",
   },
@@ -143,7 +143,7 @@ export const artPieces: ArtPiece[] = [
     medium: ArtMediums.MixedMedia,
     price: ON_REQUEST_PRICE,
     availability: Availability.Available,
-    year: "2026",
+    year: "2025",
     summary:
       "Die Collage verdichtet die in der Beschreibung benannte Flüchtigkeit urbaner Begegnungen mit der Idee eines ‚failed dating summer‘, in dem Nähe, Hoffnung und Verschwinden permanent ineinander kippen.",
   },
@@ -221,7 +221,7 @@ export const artPieces: ArtPiece[] = [
     medium: ArtMediums.Painting,
     price: ON_REQUEST_PRICE,
     availability: Availability.Sold,
-    year: "2026",
+    year: "2018",
     summary:
       "„Der Walache“ verbindet die Beschreibung einer bedrohten kulturellen Erinnerung mit der Idee, durch persönliche Nähe und Sichtbarkeit ein oft übersehenes Erbe bewusst ins Zentrum zu rücken.",
   },
@@ -238,7 +238,7 @@ export const artPieces: ArtPiece[] = [
     medium: ArtMediums.Painting,
     price: ON_REQUEST_PRICE,
     availability: Availability.Available,
-    year: "2026",
+    year: "2025",
     summary:
       "Das halb gezeichnete Gesicht zwischen Licht und Schatten verbindet die Beschreibung einer entmenschlichenden Schönheitsoptimierung mit der Idee, dass im Looksmaxxing-Trend das Eigentliche des Menschen verloren gehen kann.",
   },

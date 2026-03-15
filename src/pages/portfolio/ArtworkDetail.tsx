@@ -10,6 +10,7 @@ import { RoutePaths } from "../../general/RoutePaths";
 import { NoArtworkFound } from "./NoArtworkFound";
 import { ShareIcon } from "../../components/icons/ShareIcon";
 import { Card } from "../../components/ui/Card";
+import { getArtworkTexts } from "../../utils/artworkTranslations";
 
 export type Artwork = (typeof artPieces)[number];
 
@@ -26,6 +27,9 @@ export const ArtworkDetail = () => {
 
   const categoryLabel = (category: string) =>
     t(`categories.${category}`, { defaultValue: category });
+
+  const { description: translatedDescription, idea: translatedIdea } =
+    getArtworkTexts(t, artwork);
 
   const tableLabels = [
     { label: t("portfolio.details.year"), value: artwork.year },
@@ -97,7 +101,7 @@ export const ArtworkDetail = () => {
                 {artwork.title}
               </h1>
               <p className="mt-4 text-xl text-main-text/70">
-                {artwork.description}
+                {translatedDescription}
               </p>
             </div>
 
@@ -140,12 +144,12 @@ export const ArtworkDetail = () => {
             </Card>
           </div>
         </div>
-        {artwork.idea && (
+        {translatedIdea && (
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 mt-10">
             <h1 className="text-4xl font-bold text-main-text sm:text-5xl">
               {t("portfolio.details.ideaTitle")}
             </h1>
-            <p className="text-xl text-main-text/70">{artwork.idea}</p>
+            <p className="text-xl text-main-text/70">{translatedIdea}</p>
           </div>
         )}
         {/* Call to Action */}

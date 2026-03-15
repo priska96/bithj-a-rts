@@ -7,6 +7,7 @@ import { CTASection } from "../../components/ui/CTASection";
 import { Section } from "../../components/ui/Section";
 import { artPieces } from "../../constants/artwork";
 import { baseUrl } from "../../constants/baseUrl";
+import { getArtworkTexts } from "../../utils/artworkTranslations";
 import colorMixingPalette from "/images/colorMixingPalette.jpeg";
 
 export const Home = () => {
@@ -54,10 +55,15 @@ export const Home = () => {
         {/* Featured Artwork Items - Alternating Layout */}
         <div className="space-y-24">
           {artPieces
-            .filter(
-              (artwork) =>
-                artwork.image && artwork.summary && artwork.description,
-            )
+            .filter((artwork) => {
+              if (!artwork.image) {
+                return false;
+              }
+
+              const { summary, description } = getArtworkTexts(t, artwork);
+
+              return Boolean(summary && description);
+            })
             .slice(0, 3)
             .map((artwork, index) => (
               <Link
@@ -95,7 +101,7 @@ export const Home = () => {
                       {artwork.title}
                     </h3>
                     <p className="text-lg text-main-text/70 leading-relaxed mb-6">
-                      {artwork.summary}
+                      {getArtworkTexts(t, artwork).summary}
                     </p>
                     <div className="inline-flex items-center text-lg font-medium text-primary group-hover:text-primary/200">
                       {t("home.featured.viewDetails")}

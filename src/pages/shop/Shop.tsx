@@ -10,6 +10,7 @@ import { ContactForm } from "../contact/ContactForm";
 import { artPieces } from "../../constants/artwork";
 import { Availability } from "../../constants/availability";
 import { RoutePaths } from "../../general/RoutePaths";
+import { getArtworkText } from "../../utils/artworkTranslations";
 
 type PurchaseType = "print" | "original";
 
@@ -20,6 +21,9 @@ export const Shop = () => {
 
   const artworkId = Number(searchParams.get("artworkId"));
   const artwork = artPieces.find((piece) => piece.id === artworkId);
+  const translatedDescription = artwork
+    ? getArtworkText(t, artwork, "description")
+    : "";
 
   const originalAvailable = artwork?.availability === Availability.Available;
 
@@ -67,7 +71,7 @@ export const Shop = () => {
                   <h2 className="text-2xl font-bold text-main-text">
                     {artwork.title}
                   </h2>
-                  <p className="text-main-text/70">{artwork.description}</p>
+                  <p className="text-main-text/70">{translatedDescription}</p>
                 </div>
               </div>
             </Card>
