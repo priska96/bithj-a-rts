@@ -3,6 +3,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import ErrorFallback from "../components/ErrorFallback";
+import { INSTA } from "../constants/shareLinks";
 import { RoutePaths } from "./RoutePaths";
 
 export const Layout = ({ children }: PropsWithChildren) => {
@@ -102,17 +103,17 @@ export const Layout = ({ children }: PropsWithChildren) => {
                 {t("footer.faq")}
               </Link>
               <a
-                href="#"
+                href={INSTA}
                 className="text-gray-400 transition-colors hover:text-white"
               >
                 {t("footer.instagram")}
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-400 transition-colors hover:text-white"
               >
                 {t("footer.facebook")}
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
