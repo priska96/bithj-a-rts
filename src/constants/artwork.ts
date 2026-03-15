@@ -1,15 +1,15 @@
 import { ArtCategory } from "./artCategory";
 import { Availability } from "./availability";
 import { ArtMaterials, ArtMediums } from "./artMaterials";
-import hands from "../static/images/hands.jpeg";
-import kiwi from "../static/images/kiwi.jpeg";
-import skinBeforeSin from "../static/images/skinBeforeSin.jpeg";
-import freeIran from "../static/images/freeIran.jpeg";
-import water from "../static/images/water.jpeg";
-import pomegranate from "../static/images/pomegranate.jpeg";
-import bumbleInBerlin from "../static/images/bumbleInBerlin.jpeg";
-import walache from "../static/images/walache.jpeg";
-import looksMaxxing from "../static/images/looksmaxxing.jpeg";
+import hands from "../images/hands.jpeg";
+import kiwi from "../images/kiwi.jpeg";
+import skinBeforeSin from "../images/skinBeforeSin.jpeg";
+import freeIran from "../images/freeIran.jpeg";
+import water from "../images/water.jpeg";
+import pomegranate from "../images/pomegranate.jpeg";
+import bumbleInBerlin from "../images/bumbleInBerlin.jpeg";
+import walache from "../images/walache.jpeg";
+import looksMaxxing from "../images/looksmaxxing.jpeg";
 
 export interface ArtPiece {
   id: number;
