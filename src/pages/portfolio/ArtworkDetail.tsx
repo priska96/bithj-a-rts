@@ -140,14 +140,16 @@ export const ArtworkDetail = () => {
             </Card>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 mt-10 mb-8">
-          <h1 className="text-4xl font-bold text-main-text sm:text-5xl">
-            {t("portfolio.details.ideaTitle")}
-          </h1>
-          <p className="text-xl text-main-text/70">{artwork.idea}</p>
-        </div>
+        {artwork.idea && (
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 mt-10">
+            <h1 className="text-4xl font-bold text-main-text sm:text-5xl">
+              {t("portfolio.details.ideaTitle")}
+            </h1>
+            <p className="text-xl text-main-text/70">{artwork.idea}</p>
+          </div>
+        )}
         {/* Call to Action */}
-        <div className="rounded-lg bg-primary/20 p-6">
+        <div className="rounded-lg bg-primary/20 p-6 mt-8">
           <h3 className="text-xl font-bold text-main-text">
             {t("portfolio.details.ctaTitle")}
           </h3>
