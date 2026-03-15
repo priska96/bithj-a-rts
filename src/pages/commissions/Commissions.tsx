@@ -66,7 +66,7 @@ export const Commissions = () => {
             description={
               <>
                 {t("commissions.investment.descriptionPrefix")}{" "}
-                <span className="font-bold text-primary">$1,000</span>
+                <span className="font-bold text-primary">800€</span>
                 {t("commissions.investment.descriptionSuffix")}
               </>
             }

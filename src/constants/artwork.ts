@@ -40,7 +40,7 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "21 x 29,7 cm (BxH)",
     medium: ArtMediums.Drawing,
-    price: "$2,500",
+    price: "1.200€",
     availability: Availability.Available,
     year: "2022",
     summary:
@@ -55,7 +55,7 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.AcrylicOnCanvas,
     dimensions: "60 x 80 cm (BxH)",
     medium: ArtMediums.Painting,
-    price: "$1,800",
+    price: "800€",
     availability: Availability.Available,
     year: "2012",
     summary: "",
@@ -71,7 +71,7 @@ export const artPieces: ArtPiece[] = [
     materials: ArtMaterials.MixedMediaOnCanvas,
     dimensions: '30 × 40 cm (BxH)"',
     medium: ArtMediums.MixedMedia,
-    price: "$2,200",
+    price: "1.000€",
     availability: Availability.Available,
     year: "2024",
     summary:

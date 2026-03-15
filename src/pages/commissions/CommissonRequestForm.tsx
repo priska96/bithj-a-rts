@@ -32,7 +32,7 @@ export const CommissionRequestForm = () => {
   const [status, setStatus] = useState(t("commissions.form.submit"));
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
   ) => {
     setFormData({
       ...formData,
@@ -152,10 +152,11 @@ export const CommissionRequestForm = () => {
           onChange={handleChange}
           options={[
             { value: "", label: t("commissions.form.options.selectBudget") },
-            { value: "1000-2500", label: "$1,000 - $2,500" },
-            { value: "2500-5000", label: "$2,500 - $5,000" },
-            { value: "5000-10000", label: "$5,000 - $10,000" },
-            { value: "10000+", label: "$10,000+" },
+            { value: "800-1200", label: "800€ - 1.200€" },
+            { value: "1200-2500", label: "1.200€ - 2.500€" },
+            { value: "2500-5000", label: "2.500€ - 5.000€" },
+            { value: "5000-10000", label: "5.000€ - 10.000€" },
+            { value: "10000+", label: "10.000€+" },
           ]}
         />
         <SelectField
