@@ -6,6 +6,7 @@ import { SelectField } from "../../components/ui/SelectField";
 import { TextArea } from "../../components/ui/TextArea";
 import { sendEmail } from "../../utils/sendEmail";
 import { CONTACT_TEMPLATE_ID } from "../../constants/emailJs";
+import { ArtMediums } from "../../constants/artMaterials";
 
 interface CommissionForm {
   name: string;
@@ -109,20 +110,20 @@ export const CommissionRequestForm = () => {
           options={[
             { value: "", label: t("commissions.form.options.selectType") },
             {
-              value: "abstract",
-              label: t("commissions.form.options.abstract"),
+              value: ArtMediums.Painting,
+              label: t("medium.painting"),
             },
             {
-              value: "portrait",
-              label: t("commissions.form.options.portrait"),
+              value: ArtMediums.MixedMedia,
+              label: t("medium.mixedMedia"),
             },
             {
-              value: "landscape",
-              label: t("commissions.form.options.landscape"),
+              value: ArtMediums.Watercolor,
+              label: t("medium.watercolor"),
             },
             {
-              value: "mixed-media",
-              label: t("commissions.form.options.mixedMedia"),
+              value: ArtMediums.Drawing,
+              label: t("medium.drawing"),
             },
             { value: "other", label: t("commissions.form.options.other") },
           ]}
