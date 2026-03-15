@@ -228,6 +228,7 @@
     "timeline": {
       "title": "Timeline",
       "descriptionPrefix": "The creation process typically takes",
+      "weeksRange": "4-8 weeks",
       "descriptionSuffix": ", depending on the complexity and size of the artwork.",
       "bullets": [
         "Initial consultation within 1-2 days",

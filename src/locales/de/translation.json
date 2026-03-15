@@ -228,6 +228,7 @@
     "timeline": {
       "title": "Zeitrahmen",
       "descriptionPrefix": "Der Entstehungsprozess dauert in der Regel",
+      "weeksRange": "4–8 Wochen",
       "descriptionSuffix": ", abhängig von Komplexität und Größe des Kunstwerks.",
       "bullets": [
         "Erstgespräch innerhalb von 1–2 Tagen",

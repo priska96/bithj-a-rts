@@ -84,7 +84,9 @@ export const Commissions = () => {
             description={
               <>
                 {t("commissions.timeline.descriptionPrefix")}{" "}
-                <span className="font-bold text-primary">4-8 weeks</span>
+                <span className="font-bold text-primary">
+                  {t("commissions.timeline.weeksRange")}
+                </span>
                 {t("commissions.timeline.descriptionSuffix")}
               </>
             }
