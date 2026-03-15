@@ -5,6 +5,7 @@ import { HeroSection } from "../../components/ui/HeroSection";
 import { Button } from "../../components/ui/Button";
 import { artPieces } from "../../constants/artwork";
 import { ArtCategory } from "../../constants/artCategory";
+import { baseUrl } from "../../constants/baseUrl";
 import { ImageCard } from "../../components/ui/ImageCard";
 
 const categories: Array<ArtCategory | "All"> = [
