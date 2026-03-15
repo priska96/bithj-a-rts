@@ -103,7 +103,7 @@
     "heroTitle": "Kontakt aufnehmen",
     "heroSubtitle": "Ich freue mich, von dir zu hören. Sende mir eine Nachricht und ich melde mich so schnell wie möglich zurück.",
     "emailValue": "deine-email@beispiel.de",
-    "locationValue": "Deine Stadt, Land",
+    "locationValue": "Berlin, Deutschland",
     "responseValue": "Innerhalb von 24–48 Stunden",
     "form": {
       "name": "Name *",

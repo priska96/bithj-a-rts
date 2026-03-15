@@ -30,9 +30,7 @@ export const Contact = () => {
                 <h3 className="mt-4 text-lg font-medium text-main-text">
                   {t("common.email")}
                 </h3>
-                <p className="mt-2 text-main-text/70">
-                  {t("contact.emailValue")}
-                </p>
+                <p className="mt-2 text-main-text/70">bithkay@googlemail.com</p>
               </div>
 
               <div className="text-center">
